@@ -6,7 +6,8 @@ Description:    Check the disk for errors.
 Keywords:       Check disk errors
 Author:         Imre Leber <imre.leber -AT- telenet.be>
 Maintained-by:  Imre Leber <imre.leber -AT- telenet.be>
-Primary-site:   http://users.telenet.be/imre/FreeDOS/
+Primary-site:   http://gitlab.com/FDOS/base/chkdsk
+defunct-Primary-site:   http://users.telenet.be/imre/FreeDOS/
 Alternate-site: http://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/dos/chkdsk/
 http://users.pandora.be/imre/FreeDOS/
 Original-site:  http://users.telenet.be/imre/FreeDOS/
