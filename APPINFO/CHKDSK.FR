@@ -1,0 +1,5 @@
+Begin3
+Language:       fr, 850
+Description:    V‚rifier le disque pour des erreurs.
+Keywords:       V‚rifier les disques pour des erreurs
+End
