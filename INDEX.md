@@ -3,7 +3,7 @@
 Check the disk for errors.
 
 
-## Language contributions
+## Contributions
 
 NLS specific corrections, updates and submissions should not be 
 directly to submitted this project. NLS is maintained at the [FD-NLS](https://github.com/shidel/fd-nls)
