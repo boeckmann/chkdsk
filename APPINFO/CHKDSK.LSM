@@ -6,12 +6,9 @@ Description:    Check the disk for errors.
 Keywords:       Check disk errors
 Author:         Imre Leber <imre.leber -AT- telenet.be>
 Maintained-by:  Imre Leber <imre.leber -AT- telenet.be>
-Primary-site:   http://gitlab.com/FDOS/base/chkdsk
 defunct-site:   http://users.pandora.be/imre/FreeDOS/
 defunct-site:   http://users.telenet.be/imre/FreeDOS/
 Platforms:      DOS, FreeDOS
 Copying-policy: GNU General Public License, Version 2
 Wiki-site:      http://wiki.freedos.org/wiki/index.php/Chkdsk
-Modified-date:  2021-03-18.0
-Changes:        Update to package LSM metadata
 End

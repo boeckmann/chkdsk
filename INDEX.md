@@ -20,7 +20,6 @@ developer, it may be beneficial to also submit changes to them directly.
 <tr><td>keywords</td><td>Check disk errors</td></tr>
 <tr><td>author</td><td>Imre Leber &lt;imre.leber -AT- telenet.be&gt;</td></tr>
 <tr><td>maintained&nbsp;by</td><td>Imre Leber &lt;imre.leber -AT- telenet.be&gt;</td></tr>
-<tr><td>primary&nbsp;site</td><td>http://gitlab.com/FDOS/base/chkdsk</td></tr>
 <tr><td>platforms</td><td>DOS, FreeDOS</td></tr>
 <tr><td>copying&nbsp;policy</td><td>[GNU General Public License, Version 2](LICENSE)</td></tr>
 <tr><td>wiki&nbsp;site</td><td>http://wiki.freedos.org/wiki/index.php/Chkdsk</td></tr>
