@@ -1,7 +1,3 @@
-# CHKDSK
-
-Check the disk for errors.
-
 # Contributing
 
 **Would you like to contribute to FreeDOS?** The programs listed here are a great place to start. Most of these do not have a maintainer anymore and need your help to make them better. Here's how to get started:
@@ -13,18 +9,3 @@ Check the disk for errors.
 · **Translators**: Please submit to the [FD-NLS Project](https://github.com/shidel/fd-nls).
 
 _*Make sure to check all source code licenses, especially for any code you might reuse from other projects to improve these programs. Note that not all open source licenses are the same or compatible with one another. (For example, you cannot reuse code covered under the GNU GPL in a program that uses the BSD license.)_
-
-## CHKDSK.LSM
-
-<table>
-<tr><td>title</td><td>CHKDSK</td></tr>
-<tr><td>version</td><td>beta 0.9.2 (rev A)</td></tr>
-<tr><td>entered&nbsp;date</td><td>2013-06-13</td></tr>
-<tr><td>description</td><td>Check the disk for errors.</td></tr>
-<tr><td>keywords</td><td>Check disk errors</td></tr>
-<tr><td>author</td><td>Imre Leber &lt;imre.leber -AT- telenet.be&gt;</td></tr>
-<tr><td>maintained&nbsp;by</td><td>Imre Leber &lt;imre.leber -AT- telenet.be&gt;</td></tr>
-<tr><td>platforms</td><td>DOS, FreeDOS</td></tr>
-<tr><td>copying&nbsp;policy</td><td>[GNU General Public License, Version 2](LICENSE)</td></tr>
-<tr><td>wiki&nbsp;site</td><td>http://wiki.freedos.org/wiki/index.php/Chkdsk</td></tr>
-</table>
