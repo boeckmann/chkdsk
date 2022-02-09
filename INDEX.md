@@ -20,7 +20,7 @@ _*Make sure to check all source code licenses, especially for any code you might
 <tr><td>title</td><td>CHKDSK</td></tr>
 <tr><td>version</td><td>beta 0.9.2 (rev A)</td></tr>
 <tr><td>entered&nbsp;date</td><td>2013-06-13</td></tr>
-<tr><td>description</td><td>Check the disk for errors.</td></tr>
+<tr><td>description</td><td>Check the disk for errors</td></tr>
 <tr><td>summary</td><td>Check the disk for errors.</td></tr>
 <tr><td>keywords</td><td>Check disk errors</td></tr>
 <tr><td>author</td><td>Imre Leber &lt;imre.leber -AT- telenet.be&gt;</td></tr>
