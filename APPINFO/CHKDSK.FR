@@ -1,5 +1,5 @@
 Begin3
-Language:    FR, 850
+Language:    FR, 850, French (Standard)
 Title:       CHKDSK
 Description: V‚rifier le disque pour des erreurs.
 Keywords:    V‚rifier les disques pour des erreurs

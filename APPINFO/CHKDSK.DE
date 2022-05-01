@@ -1,6 +1,7 @@
 Begin3
-Language:    DE, 858
+Language:    DE, 850, German (Standard)
 Title:       CHKDSK
 Description: Untersucht ein Laufwerk auf Fehler.
+Summary:     Untersucht ein Laufwerk auf Fehler
 Keywords:    Check, disk, Festplatte, Fehler, Test, harddrive
 End
