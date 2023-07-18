@@ -10,7 +10,7 @@ prepare-job:
     - apt-get update
     - apt-get install zip
   script:
-    - ./.gitlab-fpkg.sh version validate prepare build confirm
+    - ./.gitlab-fpkg.sh version compile validate prepare build confirm
   artifacts:
     paths:
         - package/${CI_PROJECT_TITLE}.zip

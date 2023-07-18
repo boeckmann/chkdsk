@@ -23,7 +23,7 @@
 # SOFTWARE.
 
 # This Utilities Version
-PACK_VER='0.4.1'
+PACK_VER='0.4.4'
 
 # The Darwin related functionality in this script is for the development and
 # local testing of the script itself on my Mac. That functionality is not
@@ -462,8 +462,10 @@ function LSMtoVars () {
 		d="${d//\|}"
 		d="${d//\'}"
 		if [[ "${v}" == 'VERSION' ]] ; then
-			echo "TAG=v${d}"  >> variables.env
-			TAG=v${d}
+			TAG="v${d// /-}"
+			TAG="${TAG//[()\\\/]}"
+			TAG="${TAG//}"
+			echo "TAG=${TAG}"  >> variables.env
 		elif [[ "${v}" == 'LFN_SUPPORT' ]] ; then
 			echo "LSM_LFN=${d}"  >> variables.env
 			LSM_LFN=v${d}
@@ -558,9 +560,13 @@ function test_structure () {
 	divider 'Validate project structure:'
 	requireExist -d "appinfo" || return $?
 	requireExist -f "appinfo/${CI_PROJECT_TITLE}.lsm" || return $?
-	requireExist -d "source/${CI_PROJECT_TITLE}" || return $?
+	if [[ "${ZIP_SOURCES}" != 'exclude' ]] ; then
+		requireExist -d "source/${CI_PROJECT_TITLE}" || return $?
+	fi
 	singleLSM || return $?
-	checkSubDirs || return $?
+	if [[ ${RELAXED_PATHS} != true ]] ; then
+		checkSubDirs || return $?
+	fi
 	checkSysDir APPINFO || return $?
 	if [[ ${MULTI_APP} == true ]] ; then
 		echo 'MULTI-APP, relaxed file name validation in system directories'
@@ -594,6 +600,13 @@ function freshenLSM () {
 	cat "${PKG_ROOT}/${lsm}"
 }
 
+function compile_from_source () {
+	[[ ! -x .gitlab-compile.sh ]] && return 0
+	divider "compile executables for ${CI_PROJECT_TITLE}:"
+	. ./.gitlab-compile.sh
+	return $?
+}
+
 function build_package () {
 	local i
 	divider "build package $TAG:"
@@ -611,7 +624,10 @@ function build_package () {
 
 function compress_package () {
 	local srcs="$(caseless ${PKG_ROOT}/SOURCE/${CI_PROJECT_TITLE})"
-	if [[ ${ZIP_SOURCES} == false ]] ; then
+	if [[ "${ZIP_SOURCES}" == 'exclude' ]] ; then
+		divider "exclude sources is active, binaries only package"
+
+	elif [[ ${ZIP_SOURCES} == false ]] ; then
 		divider "pre-compress sources is disabled"
 	else
 		divider "pre-compress sources:"
@@ -663,6 +679,9 @@ while [[ "${1}" != '' ]] ; do
 			else
 				divider "new release desired"
 			fi
+		;;
+		'compile')
+			compile_from_source || exit $?
 		;;
 		'build')
 			build_package || exit $?
