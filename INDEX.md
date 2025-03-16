@@ -1,4 +1,4 @@
-# CHKDSK
+# CHKDSK, version beta 0.9.2 (rev A)
 
 Check the disk for errors.
 
@@ -14,7 +14,7 @@ Check the disk for errors.
 
 _*Make sure to check all source code licenses, especially for any code you might reuse from other projects to improve these programs. Note that not all open source licenses are the same or compatible with one another. (For example, you cannot reuse code covered under the GNU GPL in a program that uses the BSD license.)_
 
-## CHKDSK.LSM
+# CHKDSK.LSM
 
 <table>
 <tr><td>title</td><td>CHKDSK</td></tr>
@@ -23,9 +23,8 @@ _*Make sure to check all source code licenses, especially for any code you might
 <tr><td>description</td><td>Check the disk for errors</td></tr>
 <tr><td>summary</td><td>Check the disk for errors.</td></tr>
 <tr><td>keywords</td><td>Check disk errors</td></tr>
-<tr><td>author</td><td>Imre Leber &lt;imre.leber -AT- telenet.be&gt;</td></tr>
-<tr><td>maintained&nbsp;by</td><td>Imre Leber &lt;imre.leber -AT- telenet.be&gt;</td></tr>
+<tr><td>author</td><td>Imre Leber <imre.leber -AT- telenet.be></td></tr>
+<tr><td>maintained&nbsp;by</td><td>Imre Leber <imre.leber -AT- telenet.be></td></tr>
 <tr><td>platforms</td><td>DOS, FreeDOS</td></tr>
 <tr><td>copying&nbsp;policy</td><td>[GNU General Public License, Version 2](LICENSE)</td></tr>
-<tr><td>wiki&nbsp;site</td><td>http://wiki.freedos.org/wiki/index.php/Chkdsk</td></tr>
 </table>
