@@ -98,6 +98,7 @@ clean:
         @-del chkdrvr.obj
         @-del chkdsk.obj
         @-del chkargs.obj
+        @-del kitten.obj
         @-del chkdsk.lib
         @-del chkdsk.bak
         @cd engine\lib
