@@ -116,31 +116,6 @@ BOOL ReadBootSector(RDWRHandle handle, struct BootSectorStruct* buffer)
        RETURN_FTEERR(FALSE);	    
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* This was the old version that got an error at file boot.c line541
-BOOL ReadBootSector(RDWRHandle handle, struct BootSectorStruct* buffer)
-{
-    if (ReadSectors(handle, 1, 0, buffer) != -1)
-    {
-        Update the info in the handle structure 
-       UpdateHandleStruct(handle, buffer);          
-       return TRUE;
-    }
-    else
-       RETURN_FTEERR(FALSE);	    
-}
-*/
-
 /************************************************************
 **                      WriteBootSector
 *************************************************************

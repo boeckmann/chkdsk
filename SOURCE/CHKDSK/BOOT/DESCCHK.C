@@ -1,4 +1,4 @@
-/*
+/*    
    Descchk.c - descriptor check for floppies.
 
    Copyright (C) 2000, 2002 Imre Leber
@@ -24,17 +24,17 @@
 #include "fte.h"
 #include "..\kitten.h"
 struct KnownValues {
-   unsigned char  SectorsPerCluster; /* sectors per cluster.	      */
+   unsigned char  SectorsPerCluster; /* sectors per cluster.              */
    unsigned short ReservedSectors;   /* number of reserved sectors.       */
    unsigned short NumberOfFiles;     /* number of files or directories in */
-				     /* the root directory.	       */
+                                     /* the root directory.               */
    unsigned short NumberOfSectors;   /* number of sectors in the volume.  */
-   unsigned short SectorsPerFat;     /* number of sectors per fat.	*/
-   unsigned short SectorsPerTrack;   /* sectors per track.		*/
-   unsigned short Heads;	     /* number of read/write heads.       */
+   unsigned short SectorsPerFat;     /* number of sectors per fat.        */
+   unsigned short SectorsPerTrack;   /* sectors per track.                */
+   unsigned short Heads;             /* number of read/write heads.       */
 };
 
-/*				      SPC RS NOF   NOS  SPF SPT H	       */
+/*                                      SPC RS NOF   NOS  SPF SPT H               */
 static struct KnownValues ValuesFEh  = {1,  1,  64,  320, 1,   8, 1};
 static struct KnownValues ValuesFFh  = {2,  1, 112,  640, 1,   8, 2};
 static struct KnownValues ValuesFCh  = {1,  1,  64,  360, 2,   9, 1};
@@ -46,15 +46,15 @@ static struct KnownValues ValuesF0h  = {1,  1, 224, 2880, 9,  18, 2};
 static struct KnownValues ValuesF0h_ED = {2,  1, 240, 5760, 9,  36, 2};
 
 static int CheckKnownFormats(struct BootSectorStruct* boot,
-			     struct KnownValues* values);
+                             struct KnownValues* values);
 
 /*************************************************************************
-**			   DescriptorCheck
+**                           DescriptorCheck
 **************************************************************************
 ** Looks at the media descriptor of a floppy disks and returns wether all
 ** values in the boot sector correspond to the fixed values.
-***************************************************************************/
-
+***************************************************************************/                             
+                             
 int DescriptorCheck(RDWRHandle handle)
 {
     struct BootSectorStruct boot;
@@ -64,16 +64,16 @@ int DescriptorCheck(RDWRHandle handle)
     switch (boot.descriptor)
     {
        case 0xFE:
-	    return CheckKnownFormats(&boot, &ValuesFEh);
+            return CheckKnownFormats(&boot, &ValuesFEh);
 
        case 0xFF:
-	    return CheckKnownFormats(&boot, &ValuesFFh);
+            return CheckKnownFormats(&boot, &ValuesFFh);
 
        case 0xFC:
-	    return CheckKnownFormats(&boot, &ValuesFCh);
+            return CheckKnownFormats(&boot, &ValuesFCh);
 
        case 0xFD:
-	    return CheckKnownFormats(&boot, &ValuesFDh);
+            return CheckKnownFormats(&boot, &ValuesFDh);
 
        case 0xF9:
 	    if (!CheckKnownFormats(&boot, &ValuesF9ah))
@@ -94,23 +94,23 @@ int DescriptorCheck(RDWRHandle handle)
 }
 
 /*************************************************************************
-**			   CheckKnownFormats
+**                           CheckKnownFormats
 **************************************************************************
-** Returns wether the values in the boot sector correspond to the fixed
+** Returns wether the values in the boot sector correspond to the fixed 
 ** values.
-***************************************************************************/
+***************************************************************************/ 
 
 static int CheckKnownFormats(struct BootSectorStruct* boot,
-			     struct KnownValues* values)
+                             struct KnownValues* values)
 {
-    if ((boot->BytesPerSector    != BYTESPERSECTOR)	    ||
-	(boot->SectorsPerCluster != values->SectorsPerCluster) ||
-	(boot->ReservedSectors   != values->ReservedSectors)   ||
-	(boot->NumberOfFiles     != values->NumberOfFiles)     ||
-	(boot->NumberOfSectors   != values->NumberOfSectors)   ||
-	(boot->SectorsPerFat     != values->SectorsPerFat)     ||
-	(boot->SectorsPerTrack   != values->SectorsPerTrack)   ||
-	(boot->Heads	     != values->Heads))
+    if ((boot->BytesPerSector    != BYTESPERSECTOR)            ||
+        (boot->SectorsPerCluster != values->SectorsPerCluster) ||
+        (boot->ReservedSectors   != values->ReservedSectors)   ||
+        (boot->NumberOfFiles     != values->NumberOfFiles)     ||
+        (boot->NumberOfSectors   != values->NumberOfSectors)   ||
+        (boot->SectorsPerFat     != values->SectorsPerFat)     ||
+        (boot->SectorsPerTrack   != values->SectorsPerTrack)   ||
+        (boot->Heads             != values->Heads))
        return FALSE;
     else
        return TRUE;
