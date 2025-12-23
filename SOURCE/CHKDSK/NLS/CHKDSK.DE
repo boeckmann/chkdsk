@@ -1,0 +1,62 @@
+# CHKDSK Deutsche NLS Datei
+# Set 1: Parameter und Init
+1.1:Ungltige Parameter (%c? eingeben fr Hilfe)\n
+1.2:Bitte Pfad nach /d angeben\n
+1.3:%s reserviert fr zuknftige Nutzung!
+1.4:Unbekannte Option %s verwendet!
+1.5:Diese Optionen k”nnen nicht kombiniert werden!\n
+1.6:Zugriff auf %s verweigert\n
+1.7:Arbeitsverzeichnis kann nicht ermittelt werden\n
+1.8:Ungltige Laufwerksangabe\n
+1.9:Fehlerhafte relative Pfadangabe\n
+
+# Set 2: Technische Fehler
+2.1:FAT32 wird derzeit nicht untersttzt\n
+2.2:Fehler beim Ausgeben der Defragmentierungsinformationen.\n
+2.3:Verd„chtiger Deskriptor im Bootsektor\n
+2.4:BOOT-Sektoren sind unterschiedlich\n
+2.5:Lesefehler bei BOOT-Sektor(en)\n
+2.6:FAT-Tabellen sind unterschiedlich\n
+2.7:Lesefehler bei FAT-Tabelle(n)\n
+2.8:\nProblem bei der Oberfl„chenanalyse\n
+2.9:Fehler beim Zugriff auf den Datentr„ger\n
+2.10:\nFehler gefunden. Ohne Parameter /F werden Fehler nicht korrigiert.\n\n
+
+# Set 3: Hilfe / Status
+3.1:Prft einen Datentr„ger und zeigt einen Statusbericht an\nVerwendung:\n\tChkdsk [<Laufwerk>] [%cf] [%cd <Dateien>] [%cr] [%cs] [%cv]\n\n%cf: Behebt gefundene Fehler.\n%cd: Zeigt Fragmentierung der angegebenen Dateien.\n%cr: Prft Datentr„geroberfl„che und rettet lesbare Daten.\n%cs: Zeigt nur die Zusammenfassung.\n%cv: Zeigt Dateinamen w„hrend der Prfung an.\n\nHinweis: Ohne Laufwerksangabe wird das aktuelle Laufwerk geprft.\n
+3.2:Ben”tigte Zeit: %lds\n
+
+# Set 4: Datentr„ger Zusammenfassung
+4.1:Zusammenfassende Informationen nicht verfgbar\n
+4.2:Datentr„gerbezeichnung ist 
+4.3: erstellt am 
+4.4:Datentr„ger Seriennummer ist %04X-%04X\n
+4.5:KB Speicherplatz insgesamt\n
+4.6:Bytes Speicherplatz insgesamt\n
+4.7:KB in %lu Dateien
+4.8:Bytes in %lu Dateien
+4.9:KB in %lu versteckten Dateien
+4.10:Bytes in %lu versteckten Dateien
+4.11:KB in %lu Systemdateien
+4.12:Bytes in %lu Systemdateien
+4.13:KB in %lu Verzeichnissen
+4.14:Bytes in %lu Verzeichnissen
+4.15:KB belegt durch Dateien
+4.16:Bytes belegt durch Dateien
+4.17:KB verfgbar auf dem Datentr„ger
+4.18:Bytes verfgbar auf dem Datentr„ger
+4.19:Bytes in jedem Cluster
+4.20:Cluster insgesamt
+4.21:Fehlerhafte Cluster
+4.22:Freie Cluster
+4.23:\nFehler beim Lesen der Disk-Informationen. Die Zusammenfassung k”nnte falsch sein.\n
+
+# Set 5: Oberfl„chenanalyse
+5.1:Datentr„ger wird geprft, bitte warten . . .\n
+5.2:\nLesefehler in Sektor %lu, versuche Daten zu verschieben . . .\n
+5.3:Kein freier Speicherplatz um Cluster zu verschieben!\n
+
+
+# Set 7: Querverbundene Dateien (Cross-Links)
+7.1:Nicht gengend Speicherplatz, um querverbundene Cluster aufzutrennen\n
+7.2:%s ist querverbunden (Cross-Link)\n

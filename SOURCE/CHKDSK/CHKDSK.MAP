@@ -2,95 +2,96 @@
  Start  Stop   Length Name               Class
 
  00000H 03B76H 03B77H _TEXT              CODE
- 03B77H 042DBH 00765H CHKDSK_TEXT        CODE
- 042DCH 04381H 000A6H CHKDRVR_TEXT       CODE
- 04382H 043A7H 00026H CHKARGS_TEXT       CODE
- 043A8H 04F9AH 00BF3H RDWRSECT_TEXT      CODE
- 04F9BH 05EBCH 00F22H BOOT_TEXT          CODE
- 05EBDH 063C9H 0050DH DIRECT_TEXT        CODE
- 063CAH 0646CH 000A3H DRIVE_TEXT         CODE
- 0646DH 07739H 012CDH FAT_TEXT           CODE
- 0773AH 078B6H 0017DH FTEERR_TEXT        CODE
- 078B7H 07EC0H 0060AH SUBDIR_TEXT        CODE
- 07EC1H 082B1H 003F1H FSINFO_TEXT        CODE
- 082B2H 083ECH 0013BH LOWFAT32_TEXT      CODE
- 083EDH 08BD5H 007E9H BACKUP_TEXT        CODE
- 08BD6H 08DB0H 001DBH VOLUME_TEXT        CODE
- 08DB1H 08E38H 00088H LFN_TEXT           CODE
- 08E39H 09290H 00458H WALKTREE_TEXT      CODE
- 09291H 093C0H 00130H CPYSCT_TEXT        CODE
- 093C1H 094EEH 0012EH DIRCNT_TEXT        CODE
- 094EFH 099DFH 004F1H FNDCIDIR_TEXT      CODE
- 099E0H 09BE9H 0020AH FNDCIFAT_TEXT      CODE
- 09BEAH 09D6BH 00182H GTNTHCST_TEXT      CODE
- 09D6CH 0A0E3H 00378H NTHENTRY_TEXT      CODE
- 0A0E4H 0A3A7H 002C4H ADCPDIRS_TEXT      CODE
- 0A3A8H 0AE0CH 00A65H FILECHN_TEXT       CODE
- 0AE0DH 0AF22H 00116H FEXIST_TEXT        CODE
- 0AF23H 0B28AH 00368H LOCPATH_TEXT       CODE
- 0B28BH 0B549H 002BFH WALKWPTH_TEXT      CODE
- 0B54AH 0BA5EH 00515H TRACEPTH_TEXT      CODE
- 0BA5FH 0C0EBH 0068DH FREESPAC_TEXT      CODE
- 0C0ECH 0DC39H 01B4EH VFILESYS_TEXT      CODE
- 0DC3AH 0DE6FH 00236H WILDCARD_TEXT      CODE
- 0DE70H 0E17CH 0030DH PATHCONV_TEXT      CODE
- 0E17DH 0E471H 002F5H MKABSPTH_TEXT      CODE
- 0E472H 0E593H 00122H SCTCACHE_TEXT      CODE
- 0E594H 0E6FAH 00167H PHSCACHE_TEXT      CODE
- 0E6FBH 0E8AEH 001B4H LOGCACHE_TEXT      CODE
- 0E8AFH 0F988H 010DAH BLKCACHE_TEXT      CODE
- 0F989H 0FB1AH 00192H XMS_TEXT           CODE
- 0FB1BH 0FD81H 00267H WRTBACK_TEXT       CODE
- 0FD82H 0FE42H 000C1H READ_TEXT          CODE
- 0FE43H 0FEB6H 00074H WRITE_TEXT         CODE
- 0FEB7H 0FFC9H 00113H FTEMEM_TEXT        CODE
- 0FFCAH 10207H 0023EH BITFIELD_TEXT      CODE
- 10208H 10572H 0036BH VFSBTFLD_TEXT      CODE
- 10573H 10660H 000EEH VFSARRAY_TEXT      CODE
- 10661H 107B3H 00153H LBLVALID_TEXT      CODE
- 107B4H 10976H 001C3H DFATCHK_TEXT       CODE
- 10977H 113A0H 00A2AH CROSSLNK_TEXT      CODE
- 113A1H 11FCAH 00C2AH LOSTCLTS_TEXT      CODE
- 11FCBH 12098H 000CEH FATSUM_TEXT        CODE
- 12099H 124C0H 00428H FILESSUM_TEXT      CODE
- 124C1H 12B58H 00698H SUMMARY_TEXT       CODE
- 12B59H 12CEEH 00196H FSSTRING_TEXT      CODE
- 12CEFH 12E59H 0016BH DESCIFAT_TEXT      CODE
- 12E5AH 12F89H 00130H DESCCHK_TEXT       CODE
- 12F8AH 131C5H 0023CH DTDTPNT_TEXT       CODE
- 131C6H 13541H 0037CH DBLFILES_TEXT      CODE
- 13542H 13ACBH 0058AH CHKLFNS_TEXT       CODE
- 13ACCH 143BFH 008F4H CHKENTRS_TEXT      CODE
- 143C0H 14969H 005AAH SCANFILS_TEXT      CODE
- 1496AH 14C62H 002F9H SCNSBDRS_TEXT      CODE
- 14C63H 14E19H 001B7H SCNRTDIR_TEXT      CODE
- 14E1AH 15334H 0051BH INVCHAR_TEXT       CODE
- 15335H 15492H 0015EH INVFCLST_TEXT      CODE
- 15493H 15C61H 007CFH FSTTRMAP_TEXT      CODE
- 15C62H 165EBH 0098AH INTELWLK_TEXT      CODE
- 165ECH 16885H 0029AH DEFRFACT_TEXT      CODE
- 16886H 17378H 00AF3H SURFACE_TEXT       CODE
- 17379H 173FAH 00082H CHKMSGS_TEXT       CODE
- 173FBH 1759BH 001A1H PRINTBUF_TEXT      CODE
- 175A0H 175A0H 00000H _FARDATA           FAR_DATA
- 175A0H 175A0H 00000H _OVERLAY_          OVRINFO
- 175A0H 175B1H 00012H _INIT_             INITDATA
- 175B2H 175B2H 00000H _INITEND_          INITDATA
- 175B2H 175B2H 00000H _EXIT_             EXITDATA
- 175B2H 175B2H 00000H _EXITEND_          EXITDATA
- 175C0H 175C0H 00000H _1STUB_            STUBSEG
- 175C0H 196E3H 02124H _DATA              DATA
- 196E4H 196E4H 00000H _CVTSEG            DATA
- 196E4H 196E4H 00000H _SCNSEG            DATA
- 196E4H 196FAH 00017H XMS_DATA           DATA
- 196FCH 1ABA9H 014AEH _BSS               BSS
- 1ABAAH 1ABAAH 00000H _BSSEND            ENDBSS
- 1ABB0H 1AC2FH 00080H _STACK             STACK
- 1AC30H 1AC37H 00008H SWITCHCH_TEXT      
+ 03B77H 0448CH 00916H CHKDSK_TEXT        CODE
+ 0448DH 04542H 000B6H CHKDRVR_TEXT       CODE
+ 04543H 0456CH 0002AH CHKARGS_TEXT       CODE
+ 0456DH 04EBBH 0094FH KITTEN_TEXT        CODE
+ 04EBCH 05AEBH 00C30H RDWRSECT_TEXT      CODE
+ 05AECH 06A3BH 00F50H BOOT_TEXT          CODE
+ 06A3CH 06F61H 00526H DIRECT_TEXT        CODE
+ 06F62H 07004H 000A3H DRIVE_TEXT         CODE
+ 07005H 08272H 0126EH FAT_TEXT           CODE
+ 08273H 083F5H 00183H FTEERR_TEXT        CODE
+ 083F6H 08A0BH 00616H SUBDIR_TEXT        CODE
+ 08A0CH 08E07H 003FCH FSINFO_TEXT        CODE
+ 08E08H 08F42H 0013BH LOWFAT32_TEXT      CODE
+ 08F43H 0973DH 007FBH BACKUP_TEXT        CODE
+ 0973EH 09921H 001E4H VOLUME_TEXT        CODE
+ 09922H 099AEH 0008DH LFN_TEXT           CODE
+ 099AFH 09E0BH 0045DH WALKTREE_TEXT      CODE
+ 09E0CH 09F42H 00137H CPYSCT_TEXT        CODE
+ 09F43H 0A078H 00136H DIRCNT_TEXT        CODE
+ 0A079H 0A573H 004FBH FNDCIDIR_TEXT      CODE
+ 0A574H 0A759H 001E6H FNDCIFAT_TEXT      CODE
+ 0A75AH 0A8CCH 00173H GTNTHCST_TEXT      CODE
+ 0A8CDH 0AC48H 0037CH NTHENTRY_TEXT      CODE
+ 0AC49H 0AF26H 002DEH ADCPDIRS_TEXT      CODE
+ 0AF27H 0B966H 00A40H FILECHN_TEXT       CODE
+ 0B967H 0BA7CH 00116H FEXIST_TEXT        CODE
+ 0BA7DH 0BDF1H 00375H LOCPATH_TEXT       CODE
+ 0BDF2H 0C0C4H 002D3H WALKWPTH_TEXT      CODE
+ 0C0C5H 0C5EAH 00526H TRACEPTH_TEXT      CODE
+ 0C5EBH 0CC6CH 00682H FREESPAC_TEXT      CODE
+ 0CC6DH 0E805H 01B99H VFILESYS_TEXT      CODE
+ 0E806H 0EA48H 00243H WILDCARD_TEXT      CODE
+ 0EA49H 0ED55H 0030DH PATHCONV_TEXT      CODE
+ 0ED56H 0F06AH 00315H MKABSPTH_TEXT      CODE
+ 0F06BH 0F18CH 00122H SCTCACHE_TEXT      CODE
+ 0F18DH 0F2FAH 0016EH PHSCACHE_TEXT      CODE
+ 0F2FBH 0F4AEH 001B4H LOGCACHE_TEXT      CODE
+ 0F4AFH 10580H 010D2H BLKCACHE_TEXT      CODE
+ 10581H 1070AH 0018AH XMS_TEXT           CODE
+ 1070BH 10970H 00266H WRTBACK_TEXT       CODE
+ 10971H 10A3DH 000CDH READ_TEXT          CODE
+ 10A3EH 10ABAH 0007DH WRITE_TEXT         CODE
+ 10ABBH 10BCDH 00113H FTEMEM_TEXT        CODE
+ 10BCEH 10E0CH 0023FH BITFIELD_TEXT      CODE
+ 10E0DH 1116DH 00361H VFSBTFLD_TEXT      CODE
+ 1116EH 11265H 000F8H VFSARRAY_TEXT      CODE
+ 11266H 113BDH 00158H LBLVALID_TEXT      CODE
+ 113BEH 11580H 001C3H DFATCHK_TEXT       CODE
+ 11581H 11FEDH 00A6DH CROSSLNK_TEXT      CODE
+ 11FEEH 12BE0H 00BF3H LOSTCLTS_TEXT      CODE
+ 12BE1H 12CAAH 000CAH FATSUM_TEXT        CODE
+ 12CABH 130E5H 0043BH FILESSUM_TEXT      CODE
+ 130E6H 138F5H 00810H SUMMARY_TEXT       CODE
+ 138F6H 13A93H 0019EH FSSTRING_TEXT      CODE
+ 13A94H 13C02H 0016FH DESCIFAT_TEXT      CODE
+ 13C03H 13D4FH 0014DH DESCCHK_TEXT       CODE
+ 13D50H 13F9FH 00250H DTDTPNT_TEXT       CODE
+ 13FA0H 14328H 00389H DBLFILES_TEXT      CODE
+ 14329H 148D3H 005ABH CHKLFNS_TEXT       CODE
+ 148D4H 1521FH 0094CH CHKENTRS_TEXT      CODE
+ 15220H 157B9H 0059AH SCANFILS_TEXT      CODE
+ 157BAH 15AB5H 002FCH SCNSBDRS_TEXT      CODE
+ 15AB6H 15C66H 001B1H SCNRTDIR_TEXT      CODE
+ 15C67H 16196H 00530H INVCHAR_TEXT       CODE
+ 16197H 16303H 0016DH INVFCLST_TEXT      CODE
+ 16304H 16AECH 007E9H FSTTRMAP_TEXT      CODE
+ 16AEDH 17483H 00997H INTELWLK_TEXT      CODE
+ 17484H 17715H 00292H DEFRFACT_TEXT      CODE
+ 17716H 18208H 00AF3H SURFACE_TEXT       CODE
+ 18209H 1828AH 00082H CHKMSGS_TEXT       CODE
+ 1828BH 18431H 001A7H PRINTBUF_TEXT      CODE
+ 18440H 18440H 00000H _FARDATA           FAR_DATA
+ 18440H 18440H 00000H _OVERLAY_          OVRINFO
+ 18440H 18451H 00012H _INIT_             INITDATA
+ 18452H 18452H 00000H _INITEND_          INITDATA
+ 18452H 18452H 00000H _EXIT_             EXITDATA
+ 18452H 18452H 00000H _EXITEND_          EXITDATA
+ 18460H 18460H 00000H _1STUB_            STUBSEG
+ 18460H 1A6B5H 02256H _DATA              DATA
+ 1A6B6H 1A6B6H 00000H _CVTSEG            DATA
+ 1A6B6H 1A6B6H 00000H _SCNSEG            DATA
+ 1A6B6H 1A6CCH 00017H XMS_DATA           DATA
+ 1A6CEH 1FEFFH 05832H _BSS               BSS
+ 1FF00H 1FF00H 00000H _BSSEND            ENDBSS
+ 1FF00H 1FF7FH 00080H _STACK             STACK
+ 1FF80H 1FF87H 00008H SWITCHCH_TEXT      
 
   Address         Publics by Name
 
- 175C:0000       DATASEG@
+ 1846:0000       DATASEG@
  0000:0206       DGROUP@
  0000:3856       F_LDIV@
  0000:3865       F_LMOD@
@@ -127,342 +128,361 @@
  0000:214F       _absread
  0000:21B6       _abswrite
  0000:020A       _access
- 0A0E:0004       _AdaptCurrentAndPreviousDirs
- 0A3A:03A8       _AddDirectory
- 0B54:00B8       _AddToFrontOfString
- 0FEB:00BD       _AllocateBootSector
- 0FEB:00DC       _AllocateDirectoryEntry
- 0FEB:00FB       _AllocateFSInfo
- 0FEB:0086       _AllocateSector
- 0FEB:0097       _AllocateSectors
+ 0AC4:0009       _AdaptCurrentAndPreviousDirs
+ 0AF2:038A       _AddDirectory
+ 0C0C:00B3       _AddToFrontOfString
+ 10AB:00C1       _AllocateBootSector
+ 10AB:00E0       _AllocateDirectoryEntry
+ 10AB:00FF       _AllocateFSInfo
+ 10AB:008A       _AllocateSector
+ 10AB:009B       _AllocateSectors
  0000:0506       _asctime
  0000:0271       _atexit
  0000:2292       _atoi
  0000:221D       _atol
- 083E:000D       _BackupBoot
- 083E:0748       _BackupFat
- 0E47:00E6       _CacheActive
- 0E8A:01DF       _CacheBlockSector
- 0E47:004C       _CacheIsCorrupt
- 0E47:005B       _CacheSector
- 0BA5:05F3       _CalculateFreeSpace
- 04F9:0D86       _CalculateNewSerialNumber
- 08DB:0001       _CalculateSFNCheckSum
+ 08F4:0003       _BackupBoot
+ 08F4:074D       _BackupFat
+ 0F06:00EF       _CacheActive
+ 0F4A:01DF       _CacheBlockSector
+ 0F06:0055       _CacheIsCorrupt
+ 0F06:0064       _CacheSector
+ 0C5E:05E1       _CalculateFreeSpace
+ 05AE:0DB1       _CalculateNewSerialNumber
+ 0992:0002       _CalculateSFNCheckSum
+ 1846:45F2       _catcontents
+ 1846:4272       _catfile
+ 1846:42F2       _catpoints
+ 0456:0433       _catread
  0000:22A3       _chdir
- 12CE:000F       _CheckDescriptorInFat
- 13AC:000C       _CheckDirectoryEntries
- 131C:00DC       _CheckDirectoryForDoubles
- 12F8:0049       _CheckDirectoryForInvalidDblDots
- 1496:00A4       _CheckEntriesInCluster
- 14E1:0049       _CheckEntryForInvalidChars
- 1066:0001       _CheckFatLabelValidity
- 1533:003D       _CheckFirstCluster
- 07EC:00FD       _CheckFSInfo
- 12B5:0009       _CheckFSString
- 1354:004D       _CheckLFNInDirectory
- 042D:000C       _CheckVolume
- 0FFC:0117       _ClearBitfieldBit
- 0773:001D       _ClearFTEerror
- 1020:015C       _ClearVFSBitfieldBit
+ 13A9:0004       _CheckDescriptorInFat
+ 148D:0004       _CheckDirectoryEntries
+ 13FA:00D6       _CheckDirectoryForDoubles
+ 13D5:003F       _CheckDirectoryForInvalidDblDots
+ 157B:00A4       _CheckEntriesInCluster
+ 15C6:0046       _CheckEntryForInvalidChars
+ 1126:0006       _CheckFatLabelValidity
+ 1619:003F       _CheckFirstCluster
+ 08A0:0108       _CheckFSInfo
+ 138F:0006       _CheckFSString
+ 1432:0054       _CheckLFNInDirectory
+ 0448:000D       _CheckVolume
+ 10BC:0116       _ClearBitfieldBit
+ 0827:0016       _ClearFTEerror
+ 10E0:015C       _ClearVFSBitfieldBit
  0000:029E       _close
- 0E6F:00B4       _CloseLogicalCache
- 0E8A:01B7       _ClosePerBlockCaching
- 0E59:0087       _ClosePhysicalCache
- 043A:0B9A       _CloseReadWriteSectors
- 0E47:000F       _CloseSectorCache
- 0E47:010E       _CommitCache
- 1549:004E       _CompressFastTreeMap
- 0DE7:023F       _ConvertEntryPath
- 113A:0091       _ConvertLostClustersToFiles
- 0646:02E8       _ConvertToDataSector
- 0DE7:0000       _ConvertUserPath
- 0929:0001       _CopySectors
- 12B5:00B8       _CorrectFSString
- 0FFC:000A       _CreateBitField
- 1549:0003       _CreateFastTreeMap
- 0A3A:0008       _CreateFileChain
- 1057:0003       _CreateVFSArray
- 1020:0008       _CreateVFSBitField
- 0C0E:000C       _CreateVirtualFile
+ 0F2F:00B4       _CloseLogicalCache
+ 0F4A:01B7       _ClosePerBlockCaching
+ 0F18:0097       _ClosePhysicalCache
+ 04EB:0BD8       _CloseReadWriteSectors
+ 0F06:0018       _CloseSectorCache
+ 0F06:0117       _CommitCache
+ 1630:004F       _CompressFastTreeMap
+ 0EA4:0248       _ConvertEntryPath
+ 11FE:009E       _ConvertLostClustersToFiles
+ 0700:02E7       _ConvertToDataSector
+ 0EA4:0009       _ConvertUserPath
+ 09E0:000C       _CopySectors
+ 138F:00B7       _CorrectFSString
+ 10BC:000E       _CreateBitField
+ 1630:0004       _CreateFastTreeMap
+ 0AF2:0007       _CreateFileChain
+ 1116:000E       _CreateVFSArray
+ 10E0:000D       _CreateVFSBitField
+ 0CC6:000D       _CreateVirtualFile
  0000:055F       _ctime
- 0646:0214       _DataSectorToCluster
- 175C:209A       _daylight
- 0E8A:0F0F       _DBGLogDelim
- 0E8A:0EBF       _DBGLogSector
- 175C:0CD4       _DBG_A
- 175C:0CD8       _DBG_B
- 175C:0CDC       _DBG_C
- 175C:0CE0       _DBG_D
- 175C:0CC8       _DBG_HITS
- 175C:0CD0       _DBG_TOTAL
- 175C:0CCC       _DBG_WRITES
- 0C0E:00D3       _DeleteVirtualFile
- 12E5:000A       _DescriptorCheck
- 0FFC:0094       _DestroyBitfield
- 1496:01CB       _DestroyClusterEntryChecking
- 1097:08DE       _DestroyClusterReferenceList
- 12F8:011C       _DestroyDblDotChecking
- 131C:029F       _DestroyDblNameChecking
- 094E:00B9       _DestroyDirReferedTable
- 1549:0164       _DestroyFastTreeMap
- 099E:00FA       _DestroyFatReferedTable
- 1533:014C       _DestroyFirstClusterChecking
- 14E1:043B       _DestroyInvalidCharChecking
- 1354:0302       _DestroyLFNChecking
- 1057:0067       _DestroyVFSArray
- 1020:009F       _DestroyVFSBitfield
- 04F9:08C1       _DetermineFATType
- 175C:1858       _DirectoryChecks
- 078B:04B9       _DirectoryEquals
- 0FD8:0002       _disk_read
- 0FD8:004F       _disk_read_ext
- 0FE4:0003       _disk_write_ext
+ 0700:0210       _DataSectorToCluster
+ 1846:21CC       _daylight
+ 0F4A:0F07       _DBGLogDelim
+ 0F4A:0EB7       _DBGLogSector
+ 1846:0DFA       _DBG_A
+ 1846:0DFE       _DBG_B
+ 1846:0E02       _DBG_C
+ 1846:0E06       _DBG_D
+ 1846:0DEE       _DBG_HITS
+ 1846:0DF6       _DBG_TOTAL
+ 1846:0DF2       _DBG_WRITES
+ 0CC6:00E4       _DeleteVirtualFile
+ 13C0:0003       _DescriptorCheck
+ 10BC:0098       _DestroyBitfield
+ 157B:01CE       _DestroyClusterEntryChecking
+ 1158:08F8       _DestroyClusterReferenceList
+ 13D5:0124       _DestroyDblDotChecking
+ 13FA:02A3       _DestroyDblNameChecking
+ 0A07:00AF       _DestroyDirReferedTable
+ 1630:0167       _DestroyFastTreeMap
+ 0A57:00EA       _DestroyFatReferedTable
+ 1619:015D       _DestroyFirstClusterChecking
+ 15C6:043E       _DestroyInvalidCharChecking
+ 1432:0316       _DestroyLFNChecking
+ 1116:0076       _DestroyVFSArray
+ 10E0:00A4       _DestroyVFSBitfield
+ 05AE:08D7       _DetermineFATType
+ 1846:198A       _DirectoryChecks
+ 083F:04C1       _DirectoryEquals
+ 1097:0001       _disk_read
+ 1097:0051       _disk_read_ext
+ 10A3:000E       _disk_write_ext
  0000:1B53       _dostounix
- 0F98:010F       _DOStoXMSmove
- 0E8A:0F5F       _DumpCache
- 0E6F:00E1       _EnsureBlockMapped
- 0C0E:0743       _EnsureClusterFree
- 0C0E:0763       _EnsureClustersFree
- 05EB:0395       _EntryLength
- 175C:2120       _environ
- 175C:007D       _errno
+ 1058:0101       _DOStoXMSmove
+ 0456:00EA       _dos_close
+ 0456:000D       _dos_open
+ 0456:0052       _dos_read
+ 0456:009E       _dos_write
+ 0F4A:0F57       _DumpCache
+ 0F2F:00E1       _EnsureBlockMapped
+ 0CC6:0776       _EnsureClusterFree
+ 0CC6:0796       _EnsureClustersFree
+ 06A3:03A5       _EntryLength
+ 1846:2252       _environ
+ 1846:007D       _errno
  0000:0CDE       _exit
- 082B:0002       _ExtendedAbsReadWrite
- 0A3A:011A       _ExtendFileChain
+ 08E0:0008       _ExtendedAbsReadWrite
+ 0AF2:0117       _ExtendFileChain
  0000:357E       _farfree
  0000:366E       _farmalloc
  0000:37CE       _farrealloc
- 175C:1A14       _FastTreeLen
- 1549:0538       _FastWalkDirectoryTree
+ 1846:1B46       _FastTreeLen
+ 1630:0548       _FastWalkDirectoryTree
  0000:0E2F       _fclose
  0000:1233       _fdopen
  0000:0EDE       _fflush
- 0646:09BC       _FileTraverseFat
- 094E:024E       _FindClusterInDirectories
- 099E:01C2       _FindClusterInFAT
- 1097:0007       _FindCrossLinkedFiles
- 0BA5:0396       _FindFirstFittingFreeSpace
- 0BA5:000F       _FindFirstFreeSpace
- 0BA5:041A       _FindLastFreeCluster
- 113A:0001       _FindLostClusters
- 0BA5:018C       _FindNextFreeSpace
- 0B54:01C5       _FindPointingPosition
- 13AC:010C       _FixDirectoryEntries
- 042D:0052       _FixVolume
+ 0700:099D       _FileTraverseFat
+ 0A07:0252       _FindClusterInDirectories
+ 0A57:01A2       _FindClusterInFAT
+ 1158:0001       _FindCrossLinkedFiles
+ 0C5E:038E       _FindFirstFittingFreeSpace
+ 0C5E:000B       _FindFirstFreeSpace
+ 0C5E:0412       _FindLastFreeCluster
+ 11FE:000E       _FindLostClusters
+ 0C5E:0188       _FindNextFreeSpace
+ 0C0C:01C5       _FindPointingPosition
+ 148D:0104       _FixDirectoryEntries
+ 0448:005A       _FixVolume
  0000:0FAE       _flushall
  0000:11C8       _fopen
  0000:1275       _fprintf
  0000:14D4       _fputc
  0000:1630       _fputchar
  0000:357E       _free
- 0FEB:00CB       _FreeBootSector
- 0FEB:00EA       _FreeDirectoryEntry
- 0FEB:0109       _FreeFSInfo
- 0FEB:00AC       _FreeSectors
+ 10AB:00CF       _FreeBootSector
+ 10AB:00EE       _FreeDirectoryEntry
+ 10AB:010D       _FreeFSInfo
+ 10AB:00B0       _FreeSectors
  0000:11FA       _freopen
  0000:1315       _fseek
- 0FEB:0007       _FTEAlloc
- 0FEB:004F       _FTEFree
+ 10AB:000B       _FTEAlloc
+ 10AB:0053       _FTEFree
  0000:1395       _ftell
- 04F9:0553       _GetBiosDriveNumber
- 04F9:0815       _GetBPBFileSystemString
- 04F9:0769       _GetBPBVolumeLabel
- 0646:118C       _GetBytesInFat
- 04F9:045C       _GetClustersInDataArea
+ 05AE:0569       _GetBiosDriveNumber
+ 05AE:082B       _GetBPBFileSystemString
+ 05AE:077F       _GetBPBVolumeLabel
+ 0700:114B       _GetBytesInFat
+ 05AE:046E       _GetClustersInDataArea
  0000:2309       _getcurdir
  0000:13E5       _getcwd
- 0646:00B8       _GetDataAreaStart
+ 0700:00B0       _GetDataAreaStart
  0000:1471       _getdate
  0000:23C9       _getdfree
- 078B:03D5       _GetDirectory
- 05EB:000D       _GetDirectoryStart
+ 083F:03DD       _GetDirectory
+ 06A3:000C       _GetDirectoryStart
  0000:22BB       _getdisk
- 04F9:06C1       _GetDiskSerialNumber
+ 05AE:06D7       _GetDiskSerialNumber
  0000:2326       _getenv
  0000:23AB       _getfat
- 04F9:0B7B       _GetFAT32BackupBootSector
- 04F9:0AB5       _GetFAT32RootCluster
- 082B:00B0       _GetFAT32SectorSize
- 04F9:0A0B       _GetFAT32Version
+ 05AE:0BA6       _GetFAT32BackupBootSector
+ 05AE:0AE0       _GetFAT32RootCluster
+ 08E0:00B6       _GetFAT32SectorSize
+ 05AE:0A36       _GetFAT32Version
  0000:2396       _getfatd
- 0646:0021       _GetFatLabelSize
- 0646:000D       _GetFatStart
- 11FC:000B       _GetFATSummary
- 173F:000B       _GetFilePrintBuffer
- 1209:0009       _GetFilesSummary
- 05EB:033E       _GetFirstCluster
- 0E8A:08B3       _GetFirstDirtyTag
- 0773:00C2       _GetFirstFTEError
- 07EC:01D8       _GetFreeClusterSearchStart
- 0BA5:054C       _GetFreeDiskSpace
- 04F9:0B1B       _GetFSInfoSector
- 0773:000A       _GetFTEerror
- 04F9:050C       _GetLabelsInFat
- 0C0E:1AB6       _GetMaxRelocatableSize
- 04F9:035B       _GetMediaDescriptor
- 173F:0015       _GetMessageBuffer
- 0773:00E9       _GetNextFTEError
- 09BE:000A       _GetNthCluster
- 09D6:000C       _GetNthDirectoryPosition
- 09D6:01C8       _GetNthDirectorySector
- 09D6:0246       _GetNthSubDirectoryPosition
- 04F9:02F9       _GetNumberOfFats
- 07EC:02DD       _GetNumberOfFreeClusters
- 04F9:032A       _GetNumberOfRootEntries
- 04F9:038C       _GetNumberOfSectors
- 0E17:000D       _GetPreviousDir
- 0BA5:04C3       _GetPreviousFreeCluster
- 04F9:042B       _GetReadWriteHeads
- 043A:0BE3       _GetReadWriteModus
- 04F9:02C8       _GetReservedSectors
- 05EB:0215       _GetRootDirPosition
- 08BD:0006       _GetRootDirVolumeLabel
- 04F9:0291       _GetSectorsPerCluster
- 04F9:03C3       _GetSectorsPerFat
- 04F9:03FA       _GetSectorsPerTrack
- 0B54:000A       _GetSurroundingCluster
- 0B54:035A       _GetSurroundingFile
+ 0700:0019       _GetFatLabelSize
+ 0700:0005       _GetFatStart
+ 12BE:0001       _GetFATSummary
+ 1828:000B       _GetFilePrintBuffer
+ 12CA:000B       _GetFilesSummary
+ 06A3:034B       _GetFirstCluster
+ 0F4A:089E       _GetFirstDirtyTag
+ 0827:00BE       _GetFirstFTEError
+ 08A0:01E9       _GetFreeClusterSearchStart
+ 0C5E:053B       _GetFreeDiskSpace
+ 05AE:0B46       _GetFSInfoSector
+ 0827:0003       _GetFTEerror
+ 05AE:0522       _GetLabelsInFat
+ 1846:2272       _getlbuf
+ 1846:226E       _getlp
+ 1846:05E6       _getlrem
+ 0CC6:1AF9       _GetMaxRelocatableSize
+ 05AE:036D       _GetMediaDescriptor
+ 1828:0015       _GetMessageBuffer
+ 0827:00E5       _GetNextFTEError
+ 0A75:000A       _GetNthCluster
+ 0A8C:000D       _GetNthDirectoryPosition
+ 0A8C:01CD       _GetNthDirectorySector
+ 0A8C:024B       _GetNthSubDirectoryPosition
+ 05AE:030B       _GetNumberOfFats
+ 08A0:02F3       _GetNumberOfFreeClusters
+ 05AE:033C       _GetNumberOfRootEntries
+ 05AE:039E       _GetNumberOfSectors
+ 0ED5:0006       _GetPreviousDir
+ 0C5E:04B6       _GetPreviousFreeCluster
+ 05AE:043D       _GetReadWriteHeads
+ 04EB:0C24       _GetReadWriteModus
+ 05AE:02DA       _GetReservedSectors
+ 06A3:0219       _GetRootDirPosition
+ 0973:000E       _GetRootDirVolumeLabel
+ 05AE:02A3       _GetSectorsPerCluster
+ 05AE:03D5       _GetSectorsPerFat
+ 05AE:040C       _GetSectorsPerTrack
+ 0C0C:0005       _GetSurroundingCluster
+ 0C0C:0364       _GetSurroundingFile
  0000:1484       _gettime
- 1057:00B7       _GetVFSArray
- 1020:0209       _GetVFSBitfieldBit
- 0C0E:0104       _GetVirtualFileSpaceUsed
+ 1116:00C9       _GetVFSArray
+ 10E0:0204       _GetVFSBitfieldBit
+ 0CC6:011B       _GetVirtualFileSpaceUsed
+ 0456:0860       _get_char
+ 0456:08BA       _get_line
  0000:04B5       _gmtime
- 063C:000A       _HasAllFloppyForm
- 063C:0075       _HasFloppyForm
- 0438:001D       _IndicateAllFileListing
- 094E:034E       _IndicateDirClusterMoved
- 094E:02D1       _IndicateDirEntryMoved
- 1549:07BF       _IndicateTreeIncomplete
- 04F9:0C4D       _IndicateVolumeDataFilled
- 04F9:0C25       _IndicateVolumeDataFilled_NT
- 1496:000A       _InitClusterEntryChecking
- 12F8:000A       _InitDblDotChecking
- 131C:0006       _InitDblNameChecking
- 1533:0005       _InitFirstClusterChecking
- 0E6F:000B       _InitialiseLogicalCache
- 0E8A:0122       _InitialisePerBlockCaching
- 0E59:0004       _InitialisePhysicalCache
- 14E1:000A       _InitInvalidCharChecking
- 1354:0002       _InitLFNChecking
- 043A:0B68       _InitReadSectors
- 043A:0B36       _InitReadWriteSectors
- 0E47:0002       _InitSectorCache
- 0FB1:000B       _InstallWriteFunction
+ 06F6:0002       _HasAllFloppyForm
+ 06F6:006D       _HasFloppyForm
+ 0454:0022       _IndicateAllFileListing
+ 0A07:0352       _IndicateDirClusterMoved
+ 0A07:02D5       _IndicateDirEntryMoved
+ 1630:07DA       _IndicateTreeIncomplete
+ 05AE:0C78       _IndicateVolumeDataFilled
+ 05AE:0C50       _IndicateVolumeDataFilled_NT
+ 157B:000A       _InitClusterEntryChecking
+ 13D5:0000       _InitDblDotChecking
+ 13FA:0000       _InitDblNameChecking
+ 1619:0007       _InitFirstClusterChecking
+ 0F2F:000B       _InitialiseLogicalCache
+ 0F4A:0122       _InitialisePerBlockCaching
+ 0F18:000D       _InitialisePhysicalCache
+ 15C6:0007       _InitInvalidCharChecking
+ 1432:0009       _InitLFNChecking
+ 04EB:0BA6       _InitReadSectors
+ 04EB:0B74       _InitReadWriteSectors
+ 0F06:000B       _InitSectorCache
+ 1070:000B       _InstallWriteFunction
  0000:23EB       _int86
  0000:241C       _int86x
  0000:24B5       _intdos
  0000:24E3       _intdosx
- 15C6:0002       _IntelligentWalkDirectoryTree
- 0E8A:0854       _InvalidateBlockCache
- 04F9:027E       _InvalidateBootInfo
- 0E47:00D3       _InvalidateCache
- 0646:117E       _InvalidateFatCache
+ 16AE:000D       _IntelligentWalkDirectoryTree
+ 0F4A:083F       _InvalidateBlockCache
+ 05AE:028D       _InvalidateBootInfo
+ 0F06:00DC       _InvalidateCache
+ 0700:113D       _InvalidateFatCache
  0000:2543       _ioctl
  0000:25A9       _isatty
- 0C0E:0623       _IsClusterUsed
- 0438:0002       _IsInteractive
- 0646:11BB       _IsLabelValid
- 0646:1263       _IsLabelValidInFile
- 05EB:027C       _IsRootDirPosition
- 1549:07CA       _IsTreeIncomplete
- 04F9:0697       _IsVolumeDataFilled
- 04F9:06AC       _IsVolumeDataFilled_NT
- 043A:0BEF       _IsWorkingOnImageFile
+ 0CC6:0654       _IsClusterUsed
+ 0454:0003       _IsInteractive
+ 0700:117A       _IsLabelValid
+ 0700:1212       _IsLabelValidInFile
+ 06A3:0283       _IsRootDirPosition
+ 1630:07E5       _IsTreeIncomplete
+ 05AE:06AD       _IsVolumeDataFilled
+ 05AE:06C2       _IsVolumeDataFilled_NT
+ 04EB:0C30       _IsWorkingOnImageFile
  0000:2665       _itoa
- 175C:0530       _LastReadBufferSector
- 0646:0707       _LinearTraverseFat
+ 0456:0649       _kittenclose
+ 0456:0110       _kittengets
+ 0456:018C       _kittenopen
+ 1846:05E8       _lastcr
+ 1846:0656       _LastReadBufferSector
+ 0700:06DF       _LinearTraverseFat
  0000:04CE       _localtime
- 0AF2:0003       _LocateFilePosition
- 0AF2:0177       _LocatePathPosition
- 05EB:03D8       _LocatePreviousDir
- 0AF2:019C       _LocateRelPathPosition
- 0E47:0020       _LockSectorCache
- 0AE0:000D       _LoFileNameExists
- 175C:269C       _LogicalBlocks
- 093C:00C7       _low_dircount
+ 0BA7:000D       _LocateFilePosition
+ 0BA7:0184       _LocatePathPosition
+ 06A3:03EA       _LocatePreviousDir
+ 0BA7:01A7       _LocateRelPathPosition
+ 0F06:0029       _LockSectorCache
+ 0B96:0007       _LoFileNameExists
+ 1846:6B54       _LogicalBlocks
+ 09F4:00CE       _low_dircount
  0000:25BA       _lseek
  0000:26AC       _ltoa
  03B7:0007       _main
- 0E17:01A3       _MakeAbsolutePath
- 1066:004F       _MakeFatLabelsValid
+ 0ED5:01B4       _MakeAbsolutePath
+ 1126:0054       _MakeFatLabelsValid
  0000:3664       _malloc
- 1549:00C4       _MarkDirectoryEntry
- 0DC3:000A       _MatchWildcard
+ 1630:00C5       _MarkDirectoryEntry
+ 0E80:0006       _MatchWildcard
  0000:26D4       _memcmp
  0000:26FC       _memcpy
  0000:27B5       _memmove
  0000:2744       _memset
  0000:0707       _mktime
  0000:2763       _movmem
- 083E:00FD       _MultipleBootCheck
- 107B:0004       _MultipleFatCheck
- 0438:000A       _MustListAllFiles
- 175C:26DC       _NumberOfPhysicalBlocks
+ 08F4:00F6       _MultipleBootCheck
+ 113B:000E       _MultipleFatCheck
+ 0454:000D       _MustListAllFiles
+ 0456:0654       _mystrtoul
+ 1846:6B52       _NumberOfPhysicalBlocks
  0000:2803       _open
- 1496:01FF       _PerformEntryChecks
- 14C6:0003       _PerformRootDirChecks
- 12CE:00A3       _PlaceDescriptorInFat
- 09D6:0150       _positiongetter
- 12F8:00FE       _PostProcesDblDotChecking
- 131C:0281       _PostProcesDblNameChecking
- 1533:012E       _PostProcesFirstClusterChecking
- 14E1:041D       _PostProcesInvalidCharChecking
- 1354:02A1       _PostProcesLFNChecking
- 1496:0179       _PostProcessClusterEntryChecking
- 0C0E:1718       _PrepareVirtualFile
- 12F8:0024       _PreProcesDblDotChecking
- 131C:00B8       _PreProcesDblNameChecking
- 1533:001F       _PreProcesFirstClusterChecking
- 14E1:0024       _PreProcesInvalidCharChecking
- 1354:001C       _PreProcesLFNChecking
- 1496:0052       _PreProcessClusterEntryChecking
+ 157B:0202       _PerformEntryChecks
+ 15AB:0006       _PerformRootDirChecks
+ 13A9:009A       _PlaceDescriptorInFat
+ 0A8C:0155       _positiongetter
+ 13D5:0106       _PostProcesDblDotChecking
+ 13FA:0285       _PostProcesDblNameChecking
+ 1619:013F       _PostProcesFirstClusterChecking
+ 15C6:0420       _PostProcesInvalidCharChecking
+ 1432:02B7       _PostProcesLFNChecking
+ 157B:017C       _PostProcessClusterEntryChecking
+ 0CC6:1754       _PrepareVirtualFile
+ 13D5:001A       _PreProcesDblDotChecking
+ 13FA:00B2       _PreProcesDblNameChecking
+ 1619:0021       _PreProcesFirstClusterChecking
+ 15C6:0021       _PreProcesInvalidCharChecking
+ 1432:0023       _PreProcesLFNChecking
+ 157B:0052       _PreProcessClusterEntryChecking
  0000:1497       _printf
- 165E:000C       _PrintFileDefragFactors
- 04F9:05EA       _PrivateIsVolumeDataFilled
+ 1748:0004       _PrintFileDefragFactors
+ 05AE:0600       _PrivateIsVolumeDataFilled
+ 0456:06D2       _processEscChars
  0000:17EF       _puts
  0000:29A1       _read
- 04F9:0129       _ReadBootSector
- 04F9:0203       _ReadBootSectorIfNeeded
- 05EB:00DA       _ReadDirEntry
- 0646:0C2C       _ReadFatLabel
- 07EC:0001       _ReadFSInfo
- 043A:03CE       _ReadSectors
- 043A:0644       _ReadSectorsAddress
- 0C0E:0403       _ReadVirtualFile
+ 05AE:0130       _ReadBootSector
+ 05AE:0212       _ReadBootSectorIfNeeded
+ 06A3:00DB       _ReadDirEntry
+ 0700:0C02       _ReadFatLabel
+ 08A0:000C       _ReadFSInfo
+ 04EB:03DD       _ReadSectors
+ 04EB:0666       _ReadSectorsAddress
+ 0CC6:042C       _ReadVirtualFile
  0000:37C7       _realloc
- 0E59:009D       _RemapXMSBlock
- 1737:0073       _ReportFileName
- 1737:0009       _ReportFileSysError
- 1737:0032       _ReportFileSysWarning
- 1737:005B       _ReportGeneralRemark
- 124C:0001       _ReportVolumeSummary
- 0E8A:0598       _RetreiveBlockSector
- 0E47:008B       _RetreiveCachedSector
- 14C6:0141       _RootDirChecker
- 143C:0000       _ScanFileChain
- 1688:0006       _ScanSurface
+ 0F18:00AD       _RemapXMSBlock
+ 1820:0073       _ReportFileName
+ 1820:0009       _ReportFileSysError
+ 1820:0032       _ReportFileSysWarning
+ 1820:005B       _ReportGeneralRemark
+ 130E:0006       _ReportVolumeSummary
+ 0F4A:059A       _RetreiveBlockSector
+ 0F06:0094       _RetreiveCachedSector
+ 15AB:013E       _RootDirChecker
+ 1522:0000       _ScanFileChain
+ 1771:0006       _ScanSurface
  0000:2A7B       _segread
- 0FFC:00AE       _SetBitfieldBit
+ 10BC:00B2       _SetBitfieldBit
  0000:2A9B       _setblock
  0000:2AB7       _setdate
  0000:22C1       _setdisk
- 05EB:0357       _SetFirstCluster
- 0773:0012       _SetFTEerror
- 0438:0012       _SetInteractive
+ 06A3:0367       _SetFirstCluster
+ 0827:000B       _SetFTEerror
+ 0454:0017       _SetInteractive
  0000:2720       _setmem
  0000:2ACC       _settime
  0000:18B4       _setvbuf
- 1057:007D       _SetVFSArray
- 1020:00B1       _SetVFSBitfieldBit
- 173F:0094       _ShowClusterViolation
- 173F:001F       _ShowDirectoryViolation
- 173F:0104       _ShowFileNameViolation
- 173F:0146       _ShowParentViolation
- 1097:001D       _SplitCrossLinkedFiles
+ 1116:008C       _SetVFSArray
+ 10E0:00B6       _SetVFSBitfieldBit
+ 1828:0096       _ShowClusterViolation
+ 1828:001F       _ShowDirectoryViolation
+ 1828:0108       _ShowFileNameViolation
+ 1828:014C       _ShowParentViolation
+ 1158:0017       _SplitCrossLinkedFiles
  0000:1A13       _sprintf
- 0E47:0036       _StartSectorCache
+ 0F06:003F       _StartSectorCache
  0000:1A56       _stime
- 0E47:0041       _StopSectorCache
+ 0F06:004A       _StopSectorCache
  0000:2AE1       _strcat
  0000:2B20       _strchr
  0000:2B5D       _strcpy
@@ -471,134 +491,135 @@
  0000:2BA5       _strncpy
  0000:2BD6       _strnicmp
  0000:1AEE       _strrchr
- 09D6:02A0       _SubdirGetter
- 078B:0007       _SubdirTraverser
- 0FFC:0182       _SwapBitfieldBits
- 1020:0291       _SwapVFSBitfieldBits
- 1AC3:0000       _SwitchChar
- 083E:077A       _SynchronizeFATs
+ 0A8C:02A5       _SubdirGetter
+ 083F:0006       _SubdirTraverser
+ 10BC:017C       _SwapBitfieldBits
+ 10E0:028C       _SwapVFSBitfieldBits
+ 1FF8:0000       _SwitchChar
+ 08F4:077F       _SynchronizeFATs
  0000:1B39       _tell
- 175C:0090       _TheChecks
+ 1846:0090       _TheChecks
  0000:1A96       _time
- 175C:2096       _timezone
+ 1846:21C8       _timezone
  0000:1EEA       _tmpnam
  0000:1F31       _toupper
- 0B54:0404       _TraceClusterPathName
- 0B54:0212       _TraceFullPathName
- 0B54:0469       _TracePreviousDir
- 0773:0028       _TrackFTEError
- 078B:0114       _TraverseRootDir
- 078B:0321       _TraverseSubdir
- 175C:208E       _tzname
+ 0C0C:0410       _TraceClusterPathName
+ 0C0C:0215       _TraceFullPathName
+ 0C0C:0475       _TracePreviousDir
+ 0827:0021       _TrackFTEError
+ 083F:0116       _TraverseRootDir
+ 083F:031F       _TraverseSubdir
+ 1846:21C0       _tzname
  0000:2C1A       _tzset
  0000:268F       _ultoa
- 0E8A:0707       _UncacheBlockSector
- 0E47:00B4       _UncacheSector
- 0FB1:00D2       _UninstallWriteFunction
+ 0F4A:070B       _UncacheBlockSector
+ 0F06:00BD       _UncacheSector
+ 1070:00D1       _UninstallWriteFunction
  0000:1C80       _unixtodos
  0000:2EE5       _unlink
- 0E47:002B       _UnlockSectorCache
- 0773:0134       _UntrackFTEErrors
- 175C:2350       _VirtualDirectory
+ 0F06:0034       _UnlockSectorCache
+ 0827:0130       _UntrackFTEErrors
+ 1846:6806       _VirtualDirectory
  0000:1A35       _vsprintf
- 08E3:0009       _WalkDirectoryTree
- 0B28:000B       _WalkWildcardPath
+ 099A:000F       _WalkDirectoryTree
+ 0BDF:0002       _WalkWildcardPath
  0000:1F5D       _write
- 0E8A:0DAD       _WriteBackCache
- 0FB1:01B4       _WriteBackSectors
- 04F9:0D20       _WriteBiosDriveNumber
- 04F9:017C       _WriteBootSector
- 04F9:0E73       _WriteBPBFileSystemString
- 04F9:0DFC       _WriteBPBVolumeLabel
- 078B:04E1       _WriteDirectory
- 05EB:01C3       _WriteDirEntry
- 04F9:0D4C       _WriteDiskSerialNumber
- 04F9:0F1E       _WriteFAT32BackupBootSector
- 04F9:0EF9       _WriteFAT32RootCluster
- 04F9:0EEA       _WriteFAT32Version
- 0646:0DA3       _WriteFatLabel
- 099E:0124       _WriteFatReference
- 07EC:03B5       _WriteFreeClusterCount
- 07EC:0378       _WriteFreeClusterStart
- 07EC:007D       _WriteFSInfo
- 04F9:0F0F       _WriteFSInfoSector
- 175C:26E8       _WriteFuncs
- 04F9:0CB1       _WriteMediaDescriptor
- 04F9:0CA2       _WriteNumberOfFats
- 04F9:0C75       _WriteNumberOfRootEntries
- 04F9:0CC0       _WriteNumberOfSectors
- 04F9:0D11       _WriteReadWriteHeads
- 04F9:0C93       _WriteReservedSectors
- 043A:0693       _WriteSectors
- 04F9:0C84       _WriteSectorsPerCluster
- 04F9:0CCF       _WriteSectorsPerFat
- 04F9:0D02       _WriteSectorsPerTrack
- 0C0E:01DD       _WriteVirtualFile
- 0F98:0009       _XMMinit
- 0F98:0081       _XMSalloc
- 0F98:0056       _XMScoreleft
- 0F98:00C7       _XMSfree
- 0F98:0009       _XMSinit
- 0F98:0155       _XMStoDOSmove
+ 0F4A:0DA5       _WriteBackCache
+ 1070:01B3       _WriteBackSectors
+ 05AE:0D4B       _WriteBiosDriveNumber
+ 05AE:018D       _WriteBootSector
+ 05AE:0EA2       _WriteBPBFileSystemString
+ 05AE:0E2B       _WriteBPBVolumeLabel
+ 083F:04E9       _WriteDirectory
+ 06A3:01C7       _WriteDirEntry
+ 05AE:0D77       _WriteDiskSerialNumber
+ 05AE:0F4D       _WriteFAT32BackupBootSector
+ 05AE:0F28       _WriteFAT32RootCluster
+ 05AE:0F19       _WriteFAT32Version
+ 0700:0D81       _WriteFatLabel
+ 0A57:0114       _WriteFatReference
+ 08A0:03CB       _WriteFreeClusterCount
+ 08A0:038E       _WriteFreeClusterStart
+ 08A0:0088       _WriteFSInfo
+ 05AE:0F3E       _WriteFSInfoSector
+ 1846:6B9E       _WriteFuncs
+ 05AE:0CDC       _WriteMediaDescriptor
+ 05AE:0CCD       _WriteNumberOfFats
+ 05AE:0CA0       _WriteNumberOfRootEntries
+ 05AE:0CEB       _WriteNumberOfSectors
+ 05AE:0D3C       _WriteReadWriteHeads
+ 05AE:0CBE       _WriteReservedSectors
+ 04EB:06B5       _WriteSectors
+ 05AE:0CAF       _WriteSectorsPerCluster
+ 05AE:0CFA       _WriteSectorsPerFat
+ 05AE:0D2D       _WriteSectorsPerTrack
+ 0CC6:01FB       _WriteVirtualFile
+ 1058:0001       _XMMinit
+ 1058:0077       _XMSalloc
+ 1058:004D       _XMScoreleft
+ 1058:00BA       _XMSfree
+ 1058:0001       _XMSinit
+ 1058:0146       _XMStoDOSmove
  0000:1000  Abs  __AHINCR
  0000:000C  Abs  __AHSHIFT
- 175C:2110       __argc
- 175C:2112       __argv
- 175C:1B54       __atexitcnt
- 175C:3522       __atexittbl
+ 1846:2242       __argc
+ 1846:2244       __argv
+ 1846:1C86       __atexitcnt
+ 1846:79D8       __atexittbl
  0000:0D83       __brk
- 175C:0087       __brklvl
- 175C:0069       __C0argc
- 175C:006B       __C0argv
- 175C:006F       __C0environ
+ 1846:0087       __brklvl
+ 1846:0069       __C0argc
+ 1846:006B       __C0argv
+ 1846:006F       __C0environ
  0000:22CE       __chmod
  0000:22EB       __close
- 175C:1D2C       __ctype
- 175C:2018       __doserrno
- 175C:201A       __dosErrorToSV
- 175C:0073       __envLng
- 175C:0075       __envseg
- 175C:0077       __envSize
+ 1846:1E5E       __ctype
+ 1846:214A       __doserrno
+ 1846:214C       __dosErrorToSV
+ 1846:0073       __envLng
+ 1846:0075       __envseg
+ 1846:0077       __envSize
  0000:011A       __exit
- 175C:1E2E       __exitbuf
+ 1846:1F60       __exitbuf
  0000:00FA       __exitclean
- 175C:1E32       __exitfopen
- 175C:1E36       __exitopen
- 175C:1FF4       __fmode
+ 1846:1F64       __exitfopen
+ 1846:1F68       __exitopen
+ 1846:2126       __fmode
  0000:14B2       __fputc
  0000:1647       __FPUTN
- 175C:0083       __heapbase
- 175C:008B       __heaptop
- 175C:0059       __Int0Vector
- 175C:005D       __Int4Vector
- 175C:0061       __Int5Vector
- 175C:0065       __Int6Vector
+ 1846:0083       __heapbase
+ 1846:008B       __heaptop
+ 1846:0059       __Int0Vector
+ 1846:005D       __Int4Vector
+ 1846:0061       __Int5Vector
+ 1846:0065       __Int6Vector
  0000:256C       __IOERROR
  0000:2E06       __ISDST
+ 1846:05E4       __kitten_catalog
  0000:25E3       __LONGTOA
  0000:1E84       __MKNAME
  0000:0208       __MMODEL
- 175C:2074       __monthDay
- 175C:1FF6       __notUmask
+ 1846:21A6       __monthDay
+ 1846:2128       __notUmask
  0000:2953       __open
- 175C:1FCC       __openfd
- 175C:007B       __osmajor
- 175C:007C       __osminor
- 175C:0079       __psp
+ 1846:20FE       __openfd
+ 1846:007B       __osmajor
+ 1846:007C       __osminor
+ 1846:0079       __psp
  0000:2A5F       __read
  0000:39FA       __REALCVT
- 175C:2124       __RealCvtVector
+ 1846:2256       __RealCvtVector
  0000:0178       __restorezero
  0000:0DC2       __sbrk
- 175C:2124       __ScanTodVector
+ 1846:2256       __ScanTodVector
  0000:0000  Abs  __setargv__
  0000:0000  Abs  __setenvp__
  0000:183B       __setupio
- 175C:007F       __StartTime
- 175C:1FFE       __stklen
- 175C:1E3C       __streams
- 175C:35D0       __tmpnum
- 175C:007B       __version
+ 1846:007F       __StartTime
+ 1846:2130       __stklen
+ 1846:1F6E       __streams
+ 1846:7A86       __tmpnum
+ 1846:007B       __version
  0000:2F15       __VPRINTER
  0000:33ED       __write
  0000:208A       __xfclose
@@ -760,373 +781,393 @@
  0000:39D9       N_PCMP@
  0000:39FA       __REALCVT
  03B7:0007       _main
- 042D:000C       _CheckVolume
- 042D:0052       _FixVolume
- 0438:0002       _IsInteractive
- 0438:000A       _MustListAllFiles
- 0438:0012       _SetInteractive
- 0438:001D       _IndicateAllFileListing
- 043A:03CE       _ReadSectors
- 043A:0644       _ReadSectorsAddress
- 043A:0693       _WriteSectors
- 043A:0B36       _InitReadWriteSectors
- 043A:0B68       _InitReadSectors
- 043A:0B9A       _CloseReadWriteSectors
- 043A:0BE3       _GetReadWriteModus
- 043A:0BEF       _IsWorkingOnImageFile
- 04F9:0129       _ReadBootSector
- 04F9:017C       _WriteBootSector
- 04F9:0203       _ReadBootSectorIfNeeded
- 04F9:027E       _InvalidateBootInfo
- 04F9:0291       _GetSectorsPerCluster
- 04F9:02C8       _GetReservedSectors
- 04F9:02F9       _GetNumberOfFats
- 04F9:032A       _GetNumberOfRootEntries
- 04F9:035B       _GetMediaDescriptor
- 04F9:038C       _GetNumberOfSectors
- 04F9:03C3       _GetSectorsPerFat
- 04F9:03FA       _GetSectorsPerTrack
- 04F9:042B       _GetReadWriteHeads
- 04F9:045C       _GetClustersInDataArea
- 04F9:050C       _GetLabelsInFat
- 04F9:0553       _GetBiosDriveNumber
- 04F9:05EA       _PrivateIsVolumeDataFilled
- 04F9:0697       _IsVolumeDataFilled
- 04F9:06AC       _IsVolumeDataFilled_NT
- 04F9:06C1       _GetDiskSerialNumber
- 04F9:0769       _GetBPBVolumeLabel
- 04F9:0815       _GetBPBFileSystemString
- 04F9:08C1       _DetermineFATType
- 04F9:0A0B       _GetFAT32Version
- 04F9:0AB5       _GetFAT32RootCluster
- 04F9:0B1B       _GetFSInfoSector
- 04F9:0B7B       _GetFAT32BackupBootSector
- 04F9:0C25       _IndicateVolumeDataFilled_NT
- 04F9:0C4D       _IndicateVolumeDataFilled
- 04F9:0C75       _WriteNumberOfRootEntries
- 04F9:0C84       _WriteSectorsPerCluster
- 04F9:0C93       _WriteReservedSectors
- 04F9:0CA2       _WriteNumberOfFats
- 04F9:0CB1       _WriteMediaDescriptor
- 04F9:0CC0       _WriteNumberOfSectors
- 04F9:0CCF       _WriteSectorsPerFat
- 04F9:0D02       _WriteSectorsPerTrack
- 04F9:0D11       _WriteReadWriteHeads
- 04F9:0D20       _WriteBiosDriveNumber
- 04F9:0D4C       _WriteDiskSerialNumber
- 04F9:0D86       _CalculateNewSerialNumber
- 04F9:0DFC       _WriteBPBVolumeLabel
- 04F9:0E73       _WriteBPBFileSystemString
- 04F9:0EEA       _WriteFAT32Version
- 04F9:0EF9       _WriteFAT32RootCluster
- 04F9:0F0F       _WriteFSInfoSector
- 04F9:0F1E       _WriteFAT32BackupBootSector
- 05EB:000D       _GetDirectoryStart
- 05EB:00DA       _ReadDirEntry
- 05EB:01C3       _WriteDirEntry
- 05EB:0215       _GetRootDirPosition
- 05EB:027C       _IsRootDirPosition
- 05EB:033E       _GetFirstCluster
- 05EB:0357       _SetFirstCluster
- 05EB:0395       _EntryLength
- 05EB:03D8       _LocatePreviousDir
- 063C:000A       _HasAllFloppyForm
- 063C:0075       _HasFloppyForm
- 0646:000D       _GetFatStart
- 0646:0021       _GetFatLabelSize
- 0646:00B8       _GetDataAreaStart
- 0646:0214       _DataSectorToCluster
- 0646:02E8       _ConvertToDataSector
- 0646:0707       _LinearTraverseFat
- 0646:09BC       _FileTraverseFat
- 0646:0C2C       _ReadFatLabel
- 0646:0DA3       _WriteFatLabel
- 0646:117E       _InvalidateFatCache
- 0646:118C       _GetBytesInFat
- 0646:11BB       _IsLabelValid
- 0646:1263       _IsLabelValidInFile
- 0773:000A       _GetFTEerror
- 0773:0012       _SetFTEerror
- 0773:001D       _ClearFTEerror
- 0773:0028       _TrackFTEError
- 0773:00C2       _GetFirstFTEError
- 0773:00E9       _GetNextFTEError
- 0773:0134       _UntrackFTEErrors
- 078B:0007       _SubdirTraverser
- 078B:0114       _TraverseRootDir
- 078B:0321       _TraverseSubdir
- 078B:03D5       _GetDirectory
- 078B:04B9       _DirectoryEquals
- 078B:04E1       _WriteDirectory
- 07EC:0001       _ReadFSInfo
- 07EC:007D       _WriteFSInfo
- 07EC:00FD       _CheckFSInfo
- 07EC:01D8       _GetFreeClusterSearchStart
- 07EC:02DD       _GetNumberOfFreeClusters
- 07EC:0378       _WriteFreeClusterStart
- 07EC:03B5       _WriteFreeClusterCount
- 082B:0002       _ExtendedAbsReadWrite
- 082B:00B0       _GetFAT32SectorSize
- 083E:000D       _BackupBoot
- 083E:00FD       _MultipleBootCheck
- 083E:0748       _BackupFat
- 083E:077A       _SynchronizeFATs
- 08BD:0006       _GetRootDirVolumeLabel
- 08DB:0001       _CalculateSFNCheckSum
- 08E3:0009       _WalkDirectoryTree
- 0929:0001       _CopySectors
- 093C:00C7       _low_dircount
- 094E:00B9       _DestroyDirReferedTable
- 094E:024E       _FindClusterInDirectories
- 094E:02D1       _IndicateDirEntryMoved
- 094E:034E       _IndicateDirClusterMoved
- 099E:00FA       _DestroyFatReferedTable
- 099E:0124       _WriteFatReference
- 099E:01C2       _FindClusterInFAT
- 09BE:000A       _GetNthCluster
- 09D6:000C       _GetNthDirectoryPosition
- 09D6:0150       _positiongetter
- 09D6:01C8       _GetNthDirectorySector
- 09D6:0246       _GetNthSubDirectoryPosition
- 09D6:02A0       _SubdirGetter
- 0A0E:0004       _AdaptCurrentAndPreviousDirs
- 0A3A:0008       _CreateFileChain
- 0A3A:011A       _ExtendFileChain
- 0A3A:03A8       _AddDirectory
- 0AE0:000D       _LoFileNameExists
- 0AF2:0003       _LocateFilePosition
- 0AF2:0177       _LocatePathPosition
- 0AF2:019C       _LocateRelPathPosition
- 0B28:000B       _WalkWildcardPath
- 0B54:000A       _GetSurroundingCluster
- 0B54:00B8       _AddToFrontOfString
- 0B54:01C5       _FindPointingPosition
- 0B54:0212       _TraceFullPathName
- 0B54:035A       _GetSurroundingFile
- 0B54:0404       _TraceClusterPathName
- 0B54:0469       _TracePreviousDir
- 0BA5:000F       _FindFirstFreeSpace
- 0BA5:018C       _FindNextFreeSpace
- 0BA5:0396       _FindFirstFittingFreeSpace
- 0BA5:041A       _FindLastFreeCluster
- 0BA5:04C3       _GetPreviousFreeCluster
- 0BA5:054C       _GetFreeDiskSpace
- 0BA5:05F3       _CalculateFreeSpace
- 0C0E:000C       _CreateVirtualFile
- 0C0E:00D3       _DeleteVirtualFile
- 0C0E:0104       _GetVirtualFileSpaceUsed
- 0C0E:01DD       _WriteVirtualFile
- 0C0E:0403       _ReadVirtualFile
- 0C0E:0623       _IsClusterUsed
- 0C0E:0743       _EnsureClusterFree
- 0C0E:0763       _EnsureClustersFree
- 0C0E:1718       _PrepareVirtualFile
- 0C0E:1AB6       _GetMaxRelocatableSize
- 0DC3:000A       _MatchWildcard
- 0DE7:0000       _ConvertUserPath
- 0DE7:023F       _ConvertEntryPath
- 0E17:000D       _GetPreviousDir
- 0E17:01A3       _MakeAbsolutePath
- 0E47:0002       _InitSectorCache
- 0E47:000F       _CloseSectorCache
- 0E47:0020       _LockSectorCache
- 0E47:002B       _UnlockSectorCache
- 0E47:0036       _StartSectorCache
- 0E47:0041       _StopSectorCache
- 0E47:004C       _CacheIsCorrupt
- 0E47:005B       _CacheSector
- 0E47:008B       _RetreiveCachedSector
- 0E47:00B4       _UncacheSector
- 0E47:00D3       _InvalidateCache
- 0E47:00E6       _CacheActive
- 0E47:010E       _CommitCache
- 0E59:0004       _InitialisePhysicalCache
- 0E59:0087       _ClosePhysicalCache
- 0E59:009D       _RemapXMSBlock
- 0E6F:000B       _InitialiseLogicalCache
- 0E6F:00B4       _CloseLogicalCache
- 0E6F:00E1       _EnsureBlockMapped
- 0E8A:0122       _InitialisePerBlockCaching
- 0E8A:01B7       _ClosePerBlockCaching
- 0E8A:01DF       _CacheBlockSector
- 0E8A:0598       _RetreiveBlockSector
- 0E8A:0707       _UncacheBlockSector
- 0E8A:0854       _InvalidateBlockCache
- 0E8A:08B3       _GetFirstDirtyTag
- 0E8A:0DAD       _WriteBackCache
- 0E8A:0EBF       _DBGLogSector
- 0E8A:0F0F       _DBGLogDelim
- 0E8A:0F5F       _DumpCache
- 0F98:0009       _XMSinit
- 0F98:0009       _XMMinit
- 0F98:0056       _XMScoreleft
- 0F98:0081       _XMSalloc
- 0F98:00C7       _XMSfree
- 0F98:010F       _DOStoXMSmove
- 0F98:0155       _XMStoDOSmove
- 0FB1:000B       _InstallWriteFunction
- 0FB1:00D2       _UninstallWriteFunction
- 0FB1:01B4       _WriteBackSectors
- 0FD8:0002       _disk_read
- 0FD8:004F       _disk_read_ext
- 0FE4:0003       _disk_write_ext
- 0FEB:0007       _FTEAlloc
- 0FEB:004F       _FTEFree
- 0FEB:0086       _AllocateSector
- 0FEB:0097       _AllocateSectors
- 0FEB:00AC       _FreeSectors
- 0FEB:00BD       _AllocateBootSector
- 0FEB:00CB       _FreeBootSector
- 0FEB:00DC       _AllocateDirectoryEntry
- 0FEB:00EA       _FreeDirectoryEntry
- 0FEB:00FB       _AllocateFSInfo
- 0FEB:0109       _FreeFSInfo
- 0FFC:000A       _CreateBitField
- 0FFC:0094       _DestroyBitfield
- 0FFC:00AE       _SetBitfieldBit
- 0FFC:0117       _ClearBitfieldBit
- 0FFC:0182       _SwapBitfieldBits
- 1020:0008       _CreateVFSBitField
- 1020:009F       _DestroyVFSBitfield
- 1020:00B1       _SetVFSBitfieldBit
- 1020:015C       _ClearVFSBitfieldBit
- 1020:0209       _GetVFSBitfieldBit
- 1020:0291       _SwapVFSBitfieldBits
- 1057:0003       _CreateVFSArray
- 1057:0067       _DestroyVFSArray
- 1057:007D       _SetVFSArray
- 1057:00B7       _GetVFSArray
- 1066:0001       _CheckFatLabelValidity
- 1066:004F       _MakeFatLabelsValid
- 107B:0004       _MultipleFatCheck
- 1097:0007       _FindCrossLinkedFiles
- 1097:001D       _SplitCrossLinkedFiles
- 1097:08DE       _DestroyClusterReferenceList
- 113A:0001       _FindLostClusters
- 113A:0091       _ConvertLostClustersToFiles
- 11FC:000B       _GetFATSummary
- 1209:0009       _GetFilesSummary
- 124C:0001       _ReportVolumeSummary
- 12B5:0009       _CheckFSString
- 12B5:00B8       _CorrectFSString
- 12CE:000F       _CheckDescriptorInFat
- 12CE:00A3       _PlaceDescriptorInFat
- 12E5:000A       _DescriptorCheck
- 12F8:000A       _InitDblDotChecking
- 12F8:0024       _PreProcesDblDotChecking
- 12F8:0049       _CheckDirectoryForInvalidDblDots
- 12F8:00FE       _PostProcesDblDotChecking
- 12F8:011C       _DestroyDblDotChecking
- 131C:0006       _InitDblNameChecking
- 131C:00B8       _PreProcesDblNameChecking
- 131C:00DC       _CheckDirectoryForDoubles
- 131C:0281       _PostProcesDblNameChecking
- 131C:029F       _DestroyDblNameChecking
- 1354:0002       _InitLFNChecking
- 1354:001C       _PreProcesLFNChecking
- 1354:004D       _CheckLFNInDirectory
- 1354:02A1       _PostProcesLFNChecking
- 1354:0302       _DestroyLFNChecking
- 13AC:000C       _CheckDirectoryEntries
- 13AC:010C       _FixDirectoryEntries
- 143C:0000       _ScanFileChain
- 1496:000A       _InitClusterEntryChecking
- 1496:0052       _PreProcessClusterEntryChecking
- 1496:00A4       _CheckEntriesInCluster
- 1496:0179       _PostProcessClusterEntryChecking
- 1496:01CB       _DestroyClusterEntryChecking
- 1496:01FF       _PerformEntryChecks
- 14C6:0003       _PerformRootDirChecks
- 14C6:0141       _RootDirChecker
- 14E1:000A       _InitInvalidCharChecking
- 14E1:0024       _PreProcesInvalidCharChecking
- 14E1:0049       _CheckEntryForInvalidChars
- 14E1:041D       _PostProcesInvalidCharChecking
- 14E1:043B       _DestroyInvalidCharChecking
- 1533:0005       _InitFirstClusterChecking
- 1533:001F       _PreProcesFirstClusterChecking
- 1533:003D       _CheckFirstCluster
- 1533:012E       _PostProcesFirstClusterChecking
- 1533:014C       _DestroyFirstClusterChecking
- 1549:0003       _CreateFastTreeMap
- 1549:004E       _CompressFastTreeMap
- 1549:00C4       _MarkDirectoryEntry
- 1549:0164       _DestroyFastTreeMap
- 1549:0538       _FastWalkDirectoryTree
- 1549:07BF       _IndicateTreeIncomplete
- 1549:07CA       _IsTreeIncomplete
- 15C6:0002       _IntelligentWalkDirectoryTree
- 165E:000C       _PrintFileDefragFactors
- 1688:0006       _ScanSurface
- 1737:0009       _ReportFileSysError
- 1737:0032       _ReportFileSysWarning
- 1737:005B       _ReportGeneralRemark
- 1737:0073       _ReportFileName
- 173F:000B       _GetFilePrintBuffer
- 173F:0015       _GetMessageBuffer
- 173F:001F       _ShowDirectoryViolation
- 173F:0094       _ShowClusterViolation
- 173F:0104       _ShowFileNameViolation
- 173F:0146       _ShowParentViolation
- 175C:0000       DATASEG@
- 175C:0059       __Int0Vector
- 175C:005D       __Int4Vector
- 175C:0061       __Int5Vector
- 175C:0065       __Int6Vector
- 175C:0069       __C0argc
- 175C:006B       __C0argv
- 175C:006F       __C0environ
- 175C:0073       __envLng
- 175C:0075       __envseg
- 175C:0077       __envSize
- 175C:0079       __psp
- 175C:007B       __osmajor
- 175C:007B       __version
- 175C:007C       __osminor
- 175C:007D       _errno
- 175C:007F       __StartTime
- 175C:0083       __heapbase
- 175C:0087       __brklvl
- 175C:008B       __heaptop
- 175C:0090       _TheChecks
- 175C:0530       _LastReadBufferSector
- 175C:0CC8       _DBG_HITS
- 175C:0CCC       _DBG_WRITES
- 175C:0CD0       _DBG_TOTAL
- 175C:0CD4       _DBG_A
- 175C:0CD8       _DBG_B
- 175C:0CDC       _DBG_C
- 175C:0CE0       _DBG_D
- 175C:1858       _DirectoryChecks
- 175C:1A14       _FastTreeLen
- 175C:1B54       __atexitcnt
- 175C:1D2C       __ctype
- 175C:1E2E       __exitbuf
- 175C:1E32       __exitfopen
- 175C:1E36       __exitopen
- 175C:1E3C       __streams
- 175C:1FCC       __openfd
- 175C:1FF4       __fmode
- 175C:1FF6       __notUmask
- 175C:1FFE       __stklen
- 175C:2018       __doserrno
- 175C:201A       __dosErrorToSV
- 175C:2074       __monthDay
- 175C:208E       _tzname
- 175C:2096       _timezone
- 175C:209A       _daylight
- 175C:2110       __argc
- 175C:2112       __argv
- 175C:2120       _environ
- 175C:2124       __ScanTodVector
- 175C:2124       __RealCvtVector
- 175C:2350       _VirtualDirectory
- 175C:269C       _LogicalBlocks
- 175C:26DC       _NumberOfPhysicalBlocks
- 175C:26E8       _WriteFuncs
- 175C:3522       __atexittbl
- 175C:35D0       __tmpnum
- 1AC3:0000       _SwitchChar
+ 0448:000D       _CheckVolume
+ 0448:005A       _FixVolume
+ 0454:0003       _IsInteractive
+ 0454:000D       _MustListAllFiles
+ 0454:0017       _SetInteractive
+ 0454:0022       _IndicateAllFileListing
+ 0456:000D       _dos_open
+ 0456:0052       _dos_read
+ 0456:009E       _dos_write
+ 0456:00EA       _dos_close
+ 0456:0110       _kittengets
+ 0456:018C       _kittenopen
+ 0456:0433       _catread
+ 0456:0649       _kittenclose
+ 0456:0654       _mystrtoul
+ 0456:06D2       _processEscChars
+ 0456:0860       _get_char
+ 0456:08BA       _get_line
+ 04EB:03DD       _ReadSectors
+ 04EB:0666       _ReadSectorsAddress
+ 04EB:06B5       _WriteSectors
+ 04EB:0B74       _InitReadWriteSectors
+ 04EB:0BA6       _InitReadSectors
+ 04EB:0BD8       _CloseReadWriteSectors
+ 04EB:0C24       _GetReadWriteModus
+ 04EB:0C30       _IsWorkingOnImageFile
+ 05AE:0130       _ReadBootSector
+ 05AE:018D       _WriteBootSector
+ 05AE:0212       _ReadBootSectorIfNeeded
+ 05AE:028D       _InvalidateBootInfo
+ 05AE:02A3       _GetSectorsPerCluster
+ 05AE:02DA       _GetReservedSectors
+ 05AE:030B       _GetNumberOfFats
+ 05AE:033C       _GetNumberOfRootEntries
+ 05AE:036D       _GetMediaDescriptor
+ 05AE:039E       _GetNumberOfSectors
+ 05AE:03D5       _GetSectorsPerFat
+ 05AE:040C       _GetSectorsPerTrack
+ 05AE:043D       _GetReadWriteHeads
+ 05AE:046E       _GetClustersInDataArea
+ 05AE:0522       _GetLabelsInFat
+ 05AE:0569       _GetBiosDriveNumber
+ 05AE:0600       _PrivateIsVolumeDataFilled
+ 05AE:06AD       _IsVolumeDataFilled
+ 05AE:06C2       _IsVolumeDataFilled_NT
+ 05AE:06D7       _GetDiskSerialNumber
+ 05AE:077F       _GetBPBVolumeLabel
+ 05AE:082B       _GetBPBFileSystemString
+ 05AE:08D7       _DetermineFATType
+ 05AE:0A36       _GetFAT32Version
+ 05AE:0AE0       _GetFAT32RootCluster
+ 05AE:0B46       _GetFSInfoSector
+ 05AE:0BA6       _GetFAT32BackupBootSector
+ 05AE:0C50       _IndicateVolumeDataFilled_NT
+ 05AE:0C78       _IndicateVolumeDataFilled
+ 05AE:0CA0       _WriteNumberOfRootEntries
+ 05AE:0CAF       _WriteSectorsPerCluster
+ 05AE:0CBE       _WriteReservedSectors
+ 05AE:0CCD       _WriteNumberOfFats
+ 05AE:0CDC       _WriteMediaDescriptor
+ 05AE:0CEB       _WriteNumberOfSectors
+ 05AE:0CFA       _WriteSectorsPerFat
+ 05AE:0D2D       _WriteSectorsPerTrack
+ 05AE:0D3C       _WriteReadWriteHeads
+ 05AE:0D4B       _WriteBiosDriveNumber
+ 05AE:0D77       _WriteDiskSerialNumber
+ 05AE:0DB1       _CalculateNewSerialNumber
+ 05AE:0E2B       _WriteBPBVolumeLabel
+ 05AE:0EA2       _WriteBPBFileSystemString
+ 05AE:0F19       _WriteFAT32Version
+ 05AE:0F28       _WriteFAT32RootCluster
+ 05AE:0F3E       _WriteFSInfoSector
+ 05AE:0F4D       _WriteFAT32BackupBootSector
+ 06A3:000C       _GetDirectoryStart
+ 06A3:00DB       _ReadDirEntry
+ 06A3:01C7       _WriteDirEntry
+ 06A3:0219       _GetRootDirPosition
+ 06A3:0283       _IsRootDirPosition
+ 06A3:034B       _GetFirstCluster
+ 06A3:0367       _SetFirstCluster
+ 06A3:03A5       _EntryLength
+ 06A3:03EA       _LocatePreviousDir
+ 06F6:0002       _HasAllFloppyForm
+ 06F6:006D       _HasFloppyForm
+ 0700:0005       _GetFatStart
+ 0700:0019       _GetFatLabelSize
+ 0700:00B0       _GetDataAreaStart
+ 0700:0210       _DataSectorToCluster
+ 0700:02E7       _ConvertToDataSector
+ 0700:06DF       _LinearTraverseFat
+ 0700:099D       _FileTraverseFat
+ 0700:0C02       _ReadFatLabel
+ 0700:0D81       _WriteFatLabel
+ 0700:113D       _InvalidateFatCache
+ 0700:114B       _GetBytesInFat
+ 0700:117A       _IsLabelValid
+ 0700:1212       _IsLabelValidInFile
+ 0827:0003       _GetFTEerror
+ 0827:000B       _SetFTEerror
+ 0827:0016       _ClearFTEerror
+ 0827:0021       _TrackFTEError
+ 0827:00BE       _GetFirstFTEError
+ 0827:00E5       _GetNextFTEError
+ 0827:0130       _UntrackFTEErrors
+ 083F:0006       _SubdirTraverser
+ 083F:0116       _TraverseRootDir
+ 083F:031F       _TraverseSubdir
+ 083F:03DD       _GetDirectory
+ 083F:04C1       _DirectoryEquals
+ 083F:04E9       _WriteDirectory
+ 08A0:000C       _ReadFSInfo
+ 08A0:0088       _WriteFSInfo
+ 08A0:0108       _CheckFSInfo
+ 08A0:01E9       _GetFreeClusterSearchStart
+ 08A0:02F3       _GetNumberOfFreeClusters
+ 08A0:038E       _WriteFreeClusterStart
+ 08A0:03CB       _WriteFreeClusterCount
+ 08E0:0008       _ExtendedAbsReadWrite
+ 08E0:00B6       _GetFAT32SectorSize
+ 08F4:0003       _BackupBoot
+ 08F4:00F6       _MultipleBootCheck
+ 08F4:074D       _BackupFat
+ 08F4:077F       _SynchronizeFATs
+ 0973:000E       _GetRootDirVolumeLabel
+ 0992:0002       _CalculateSFNCheckSum
+ 099A:000F       _WalkDirectoryTree
+ 09E0:000C       _CopySectors
+ 09F4:00CE       _low_dircount
+ 0A07:00AF       _DestroyDirReferedTable
+ 0A07:0252       _FindClusterInDirectories
+ 0A07:02D5       _IndicateDirEntryMoved
+ 0A07:0352       _IndicateDirClusterMoved
+ 0A57:00EA       _DestroyFatReferedTable
+ 0A57:0114       _WriteFatReference
+ 0A57:01A2       _FindClusterInFAT
+ 0A75:000A       _GetNthCluster
+ 0A8C:000D       _GetNthDirectoryPosition
+ 0A8C:0155       _positiongetter
+ 0A8C:01CD       _GetNthDirectorySector
+ 0A8C:024B       _GetNthSubDirectoryPosition
+ 0A8C:02A5       _SubdirGetter
+ 0AC4:0009       _AdaptCurrentAndPreviousDirs
+ 0AF2:0007       _CreateFileChain
+ 0AF2:0117       _ExtendFileChain
+ 0AF2:038A       _AddDirectory
+ 0B96:0007       _LoFileNameExists
+ 0BA7:000D       _LocateFilePosition
+ 0BA7:0184       _LocatePathPosition
+ 0BA7:01A7       _LocateRelPathPosition
+ 0BDF:0002       _WalkWildcardPath
+ 0C0C:0005       _GetSurroundingCluster
+ 0C0C:00B3       _AddToFrontOfString
+ 0C0C:01C5       _FindPointingPosition
+ 0C0C:0215       _TraceFullPathName
+ 0C0C:0364       _GetSurroundingFile
+ 0C0C:0410       _TraceClusterPathName
+ 0C0C:0475       _TracePreviousDir
+ 0C5E:000B       _FindFirstFreeSpace
+ 0C5E:0188       _FindNextFreeSpace
+ 0C5E:038E       _FindFirstFittingFreeSpace
+ 0C5E:0412       _FindLastFreeCluster
+ 0C5E:04B6       _GetPreviousFreeCluster
+ 0C5E:053B       _GetFreeDiskSpace
+ 0C5E:05E1       _CalculateFreeSpace
+ 0CC6:000D       _CreateVirtualFile
+ 0CC6:00E4       _DeleteVirtualFile
+ 0CC6:011B       _GetVirtualFileSpaceUsed
+ 0CC6:01FB       _WriteVirtualFile
+ 0CC6:042C       _ReadVirtualFile
+ 0CC6:0654       _IsClusterUsed
+ 0CC6:0776       _EnsureClusterFree
+ 0CC6:0796       _EnsureClustersFree
+ 0CC6:1754       _PrepareVirtualFile
+ 0CC6:1AF9       _GetMaxRelocatableSize
+ 0E80:0006       _MatchWildcard
+ 0EA4:0009       _ConvertUserPath
+ 0EA4:0248       _ConvertEntryPath
+ 0ED5:0006       _GetPreviousDir
+ 0ED5:01B4       _MakeAbsolutePath
+ 0F06:000B       _InitSectorCache
+ 0F06:0018       _CloseSectorCache
+ 0F06:0029       _LockSectorCache
+ 0F06:0034       _UnlockSectorCache
+ 0F06:003F       _StartSectorCache
+ 0F06:004A       _StopSectorCache
+ 0F06:0055       _CacheIsCorrupt
+ 0F06:0064       _CacheSector
+ 0F06:0094       _RetreiveCachedSector
+ 0F06:00BD       _UncacheSector
+ 0F06:00DC       _InvalidateCache
+ 0F06:00EF       _CacheActive
+ 0F06:0117       _CommitCache
+ 0F18:000D       _InitialisePhysicalCache
+ 0F18:0097       _ClosePhysicalCache
+ 0F18:00AD       _RemapXMSBlock
+ 0F2F:000B       _InitialiseLogicalCache
+ 0F2F:00B4       _CloseLogicalCache
+ 0F2F:00E1       _EnsureBlockMapped
+ 0F4A:0122       _InitialisePerBlockCaching
+ 0F4A:01B7       _ClosePerBlockCaching
+ 0F4A:01DF       _CacheBlockSector
+ 0F4A:059A       _RetreiveBlockSector
+ 0F4A:070B       _UncacheBlockSector
+ 0F4A:083F       _InvalidateBlockCache
+ 0F4A:089E       _GetFirstDirtyTag
+ 0F4A:0DA5       _WriteBackCache
+ 0F4A:0EB7       _DBGLogSector
+ 0F4A:0F07       _DBGLogDelim
+ 0F4A:0F57       _DumpCache
+ 1058:0001       _XMSinit
+ 1058:0001       _XMMinit
+ 1058:004D       _XMScoreleft
+ 1058:0077       _XMSalloc
+ 1058:00BA       _XMSfree
+ 1058:0101       _DOStoXMSmove
+ 1058:0146       _XMStoDOSmove
+ 1070:000B       _InstallWriteFunction
+ 1070:00D1       _UninstallWriteFunction
+ 1070:01B3       _WriteBackSectors
+ 1097:0001       _disk_read
+ 1097:0051       _disk_read_ext
+ 10A3:000E       _disk_write_ext
+ 10AB:000B       _FTEAlloc
+ 10AB:0053       _FTEFree
+ 10AB:008A       _AllocateSector
+ 10AB:009B       _AllocateSectors
+ 10AB:00B0       _FreeSectors
+ 10AB:00C1       _AllocateBootSector
+ 10AB:00CF       _FreeBootSector
+ 10AB:00E0       _AllocateDirectoryEntry
+ 10AB:00EE       _FreeDirectoryEntry
+ 10AB:00FF       _AllocateFSInfo
+ 10AB:010D       _FreeFSInfo
+ 10BC:000E       _CreateBitField
+ 10BC:0098       _DestroyBitfield
+ 10BC:00B2       _SetBitfieldBit
+ 10BC:0116       _ClearBitfieldBit
+ 10BC:017C       _SwapBitfieldBits
+ 10E0:000D       _CreateVFSBitField
+ 10E0:00A4       _DestroyVFSBitfield
+ 10E0:00B6       _SetVFSBitfieldBit
+ 10E0:015C       _ClearVFSBitfieldBit
+ 10E0:0204       _GetVFSBitfieldBit
+ 10E0:028C       _SwapVFSBitfieldBits
+ 1116:000E       _CreateVFSArray
+ 1116:0076       _DestroyVFSArray
+ 1116:008C       _SetVFSArray
+ 1116:00C9       _GetVFSArray
+ 1126:0006       _CheckFatLabelValidity
+ 1126:0054       _MakeFatLabelsValid
+ 113B:000E       _MultipleFatCheck
+ 1158:0001       _FindCrossLinkedFiles
+ 1158:0017       _SplitCrossLinkedFiles
+ 1158:08F8       _DestroyClusterReferenceList
+ 11FE:000E       _FindLostClusters
+ 11FE:009E       _ConvertLostClustersToFiles
+ 12BE:0001       _GetFATSummary
+ 12CA:000B       _GetFilesSummary
+ 130E:0006       _ReportVolumeSummary
+ 138F:0006       _CheckFSString
+ 138F:00B7       _CorrectFSString
+ 13A9:0004       _CheckDescriptorInFat
+ 13A9:009A       _PlaceDescriptorInFat
+ 13C0:0003       _DescriptorCheck
+ 13D5:0000       _InitDblDotChecking
+ 13D5:001A       _PreProcesDblDotChecking
+ 13D5:003F       _CheckDirectoryForInvalidDblDots
+ 13D5:0106       _PostProcesDblDotChecking
+ 13D5:0124       _DestroyDblDotChecking
+ 13FA:0000       _InitDblNameChecking
+ 13FA:00B2       _PreProcesDblNameChecking
+ 13FA:00D6       _CheckDirectoryForDoubles
+ 13FA:0285       _PostProcesDblNameChecking
+ 13FA:02A3       _DestroyDblNameChecking
+ 1432:0009       _InitLFNChecking
+ 1432:0023       _PreProcesLFNChecking
+ 1432:0054       _CheckLFNInDirectory
+ 1432:02B7       _PostProcesLFNChecking
+ 1432:0316       _DestroyLFNChecking
+ 148D:0004       _CheckDirectoryEntries
+ 148D:0104       _FixDirectoryEntries
+ 1522:0000       _ScanFileChain
+ 157B:000A       _InitClusterEntryChecking
+ 157B:0052       _PreProcessClusterEntryChecking
+ 157B:00A4       _CheckEntriesInCluster
+ 157B:017C       _PostProcessClusterEntryChecking
+ 157B:01CE       _DestroyClusterEntryChecking
+ 157B:0202       _PerformEntryChecks
+ 15AB:0006       _PerformRootDirChecks
+ 15AB:013E       _RootDirChecker
+ 15C6:0007       _InitInvalidCharChecking
+ 15C6:0021       _PreProcesInvalidCharChecking
+ 15C6:0046       _CheckEntryForInvalidChars
+ 15C6:0420       _PostProcesInvalidCharChecking
+ 15C6:043E       _DestroyInvalidCharChecking
+ 1619:0007       _InitFirstClusterChecking
+ 1619:0021       _PreProcesFirstClusterChecking
+ 1619:003F       _CheckFirstCluster
+ 1619:013F       _PostProcesFirstClusterChecking
+ 1619:015D       _DestroyFirstClusterChecking
+ 1630:0004       _CreateFastTreeMap
+ 1630:004F       _CompressFastTreeMap
+ 1630:00C5       _MarkDirectoryEntry
+ 1630:0167       _DestroyFastTreeMap
+ 1630:0548       _FastWalkDirectoryTree
+ 1630:07DA       _IndicateTreeIncomplete
+ 1630:07E5       _IsTreeIncomplete
+ 16AE:000D       _IntelligentWalkDirectoryTree
+ 1748:0004       _PrintFileDefragFactors
+ 1771:0006       _ScanSurface
+ 1820:0009       _ReportFileSysError
+ 1820:0032       _ReportFileSysWarning
+ 1820:005B       _ReportGeneralRemark
+ 1820:0073       _ReportFileName
+ 1828:000B       _GetFilePrintBuffer
+ 1828:0015       _GetMessageBuffer
+ 1828:001F       _ShowDirectoryViolation
+ 1828:0096       _ShowClusterViolation
+ 1828:0108       _ShowFileNameViolation
+ 1828:014C       _ShowParentViolation
+ 1846:0000       DATASEG@
+ 1846:0059       __Int0Vector
+ 1846:005D       __Int4Vector
+ 1846:0061       __Int5Vector
+ 1846:0065       __Int6Vector
+ 1846:0069       __C0argc
+ 1846:006B       __C0argv
+ 1846:006F       __C0environ
+ 1846:0073       __envLng
+ 1846:0075       __envseg
+ 1846:0077       __envSize
+ 1846:0079       __psp
+ 1846:007B       __osmajor
+ 1846:007B       __version
+ 1846:007C       __osminor
+ 1846:007D       _errno
+ 1846:007F       __StartTime
+ 1846:0083       __heapbase
+ 1846:0087       __brklvl
+ 1846:008B       __heaptop
+ 1846:0090       _TheChecks
+ 1846:05E4       __kitten_catalog
+ 1846:05E6       _getlrem
+ 1846:05E8       _lastcr
+ 1846:0656       _LastReadBufferSector
+ 1846:0DEE       _DBG_HITS
+ 1846:0DF2       _DBG_WRITES
+ 1846:0DF6       _DBG_TOTAL
+ 1846:0DFA       _DBG_A
+ 1846:0DFE       _DBG_B
+ 1846:0E02       _DBG_C
+ 1846:0E06       _DBG_D
+ 1846:198A       _DirectoryChecks
+ 1846:1B46       _FastTreeLen
+ 1846:1C86       __atexitcnt
+ 1846:1E5E       __ctype
+ 1846:1F60       __exitbuf
+ 1846:1F64       __exitfopen
+ 1846:1F68       __exitopen
+ 1846:1F6E       __streams
+ 1846:20FE       __openfd
+ 1846:2126       __fmode
+ 1846:2128       __notUmask
+ 1846:2130       __stklen
+ 1846:214A       __doserrno
+ 1846:214C       __dosErrorToSV
+ 1846:21A6       __monthDay
+ 1846:21C0       _tzname
+ 1846:21C8       _timezone
+ 1846:21CC       _daylight
+ 1846:2242       __argc
+ 1846:2244       __argv
+ 1846:2252       _environ
+ 1846:2256       __ScanTodVector
+ 1846:2256       __RealCvtVector
+ 1846:226E       _getlp
+ 1846:2272       _getlbuf
+ 1846:4272       _catfile
+ 1846:42F2       _catpoints
+ 1846:45F2       _catcontents
+ 1846:6806       _VirtualDirectory
+ 1846:6B52       _NumberOfPhysicalBlocks
+ 1846:6B54       _LogicalBlocks
+ 1846:6B9E       _WriteFuncs
+ 1846:79D8       __atexittbl
+ 1846:7A86       __tmpnum
+ 1FF8:0000       _SwitchChar
 
 Program entry point at 0000:0000
 

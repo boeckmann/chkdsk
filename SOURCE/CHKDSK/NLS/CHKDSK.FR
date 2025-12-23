@@ -1,0 +1,62 @@
+# CHKDSK Fichier NLS Fran‡ais
+# Set 1: ParamŠtres
+1.1:ParamŠtres invalides (tapez %c? pour l'aide)\n
+1.2:Veuillez sp‚cifier un chemin aprŠs /d\n
+1.3:%s r‚serv‚ pour un usage futur !
+1.4:Option inconnue %s utilis‚e !
+1.5:Ces options ne peuvent pas ˆtre combin‚es !\n
+1.6:Impossible d'acc‚der … %s\n
+1.7:Impossible d'obtenir le r‚pertoire courant\n
+1.8:Sp‚cification de lecteur invalide\n
+1.9:Chemin relatif incorrect\n
+
+# Set 2: Erreurs techniques
+2.1:FAT32 non support‚ actuellement\n
+2.2:ProblŠme lors de l'affichage des facteurs de fragmentation.\n
+2.3:Descripteur suspect dans le secteur de d‚marrage\n
+2.4:Les secteurs BOOT sont diff‚rents\n
+2.5:ProblŠme de lecture du/des secteur(s) BOOT\n
+2.6:Les tables FAT sont diff‚rentes\n
+2.7:ProblŠme de lecture de la/des table(s) FAT\n
+2.8:\nProblŠme lors du scan de surface\n
+2.9:Erreur d'accŠs au volume\n
+2.10:\nDes erreurs ont ‚t‚ trouv‚es. Vous n'avez pas utilis‚ l'option /F.\nLes erreurs ne seront pas corrig‚es.\n\n
+
+# Set 3: Aide / Statut
+3.1:V‚rifie un volume et affiche un rapport d'‚tat\nUsage:\n\tChkdsk [<volume>] [%cf] [%cd <fichiers>] [%cr] [%cs] [%cv]\n\n%cf: Tente de corriger les erreurs trouv‚es.\n%cd: Affiche les fichiers indiqu‚s et leur fragmentation.\n%cr: Scanne la surface et tente de r‚cup‚rer les donn‚es.\n%cs: Affiche seulement le r‚sum‚.\n%cv: Affiche le nom des fichiers pendant la v‚rification.\n\nNote: Si le volume est omis, le lecteur courant est utilis‚.\n
+3.2:Temps ‚coul‚: %lds\n
+
+# Set 4: R‚sum‚ du volume
+4.1:Impossible d'obtenir le r‚sum‚\n
+4.2:Le nom de volume est 
+4.3: cr‚‚ le 
+4.4:Le num‚ro de s‚rie du disque est %04X-%04X\n
+4.5:Ko d'espace disque total\n
+4.6:octets d'espace disque total\n
+4.7:Ko dans %lu fichiers
+4.8:octets dans %lu fichiers
+4.9:Ko dans %lu fichiers cach‚s
+4.10:octets dans %lu fichiers cach‚s
+4.11:Ko dans %lu fichiers systŠme
+4.12:octets dans %lu fichiers systŠme
+4.13:Ko dans %lu r‚pertoires
+4.14:octets dans %lu r‚pertoires
+4.15:Ko taille totale des fichiers
+4.16:octets taille totale des fichiers
+4.17:Ko disponibles sur le volume
+4.18:octets disponibles sur le volume
+4.19:octets par cluster
+4.20:nombre total de clusters
+4.21:nombre de clusters d‚fectueux
+4.22:nombre de clusters libres
+4.23:\nProblŠme de lecture des informations du disque, le r‚sum‚ peut ˆtre incorrect\n
+
+# Set 5: Analyse de surface
+5.1:Analyse en cours, veuillez patienter . . .\n
+5.2:\nErreur de lecture au secteur %lu, relocation . . .\n
+5.3:Pas d'espace libre pour reloger le cluster !\n
+
+
+# Set 7: Fichiers crois‚s
+7.1:Espace disque insuffisant pour d‚doubler les clusters crois‚s\n
+7.2:%s est crois‚ (cross-linked)\n

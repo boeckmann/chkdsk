@@ -1,0 +1,61 @@
+# CHKDSK Trk‡e NLS Dosyas
+# Set 1: Parametreler ve BaŸlang‡
+1.1:Ge‡ersiz parametreler (yardm i‡in %c? yazn)\n
+1.2:Ltfen /d parametresinden sonra bir yol belirtin\n
+1.3:%s gelecekteki kullanm i‡in ayrld!
+1.4:Bilinmeyen se‡enek %s kullanld!
+1.5:Bu se‡enekler birlikte kullanlamaz!\n
+1.6:%s srcsne eriŸilemiyor\n
+1.7:Ge‡erli ‡alŸma dizini alnamyor\n
+1.8:Ge‡ersiz src belirtimi\n
+1.9:Hatal g”reli yol belirtimi\n
+
+# Set 2: Teknik Hatalar
+2.1:FAT32 Ÿu anda desteklenmiyor\n
+2.2:BirleŸtirme fakt”rleri yazdrlrken sorun oluŸtu.\n
+2.3:™nykleme sekt”rnde Ÿpheli tanmlayc (2.88 MB?)\n
+2.4:BOOT sekt”rleri farkl\n
+2.5:BOOT sekt”r(ler)i okunurken sorun oluŸtu\n
+2.6:FAT tablolar farkl\n
+2.7:FAT tablo(lar) okunurken sorun oluŸtu\n
+2.8:\nYzey taramasnda sorun\n
+2.9:Birime eriŸim hatas\n
+2.10:\nHatalar bulundu. /F parametresini kullanmadnz. Hatalar dzeltilmedi.\n\n
+
+# Set 3: Kullanm / Durum
+3.1:Bir birimi denetler ve durum raporu g”rntler\nKullanm:\n\tChkdsk [<birim>] [%cf] [%cd <dosyalar>] [%cr] [%cs] [%cv]\n\n%cf: Bulunan hatalar dzeltmeyi dener.\n%cd: Belirtilen dosyalar ve par‡alanma durumlarn g”sterir.\n%cr: Veri alann tarar ve okunabilir verileri kurtarr.\n%cs: Sadece src ”zetini g”sterir.\n%cv: Denetleme srasnda dosya isimlerini g”sterir.\n\nNot: Birim belirtilmezse, ge‡erli src varsaylr.\n
+3.2:Ge‡en sre: %lds\n
+
+# Set 4: Birim ™zeti
+4.1:™zet bilgisi alnamyor\n
+4.2:Birim etiketi: 
+4.3: oluŸturuldu§u tarih: 
+4.4:Disk seri numaras: %04X-%04X\n
+4.5:KB toplam disk alan\n
+4.6:bayt toplam disk alan\n
+4.7:KB (toplam %lu dosyada)
+4.8:bayt (toplam %lu dosyada)
+4.9:KB (%lu gizli dosyada)
+4.10:bayt (%lu gizli dosyada)
+4.11:KB (%lu sistem dosyasnda)
+4.12:bayt (%lu sistem dosyasnda)
+4.13:KB (%lu dizinde)
+4.14:bayt (%lu dizinde)
+4.15:KB dosyalarn toplam boyutu
+4.16:bayt dosyalarn toplam boyutu
+4.17:KB birimdeki boŸ alan
+4.18:bayt birimdeki boŸ alan
+4.19:her kmedeki bayt says
+4.20:toplam kme says
+4.21:bozuk kme says
+4.22:boŸ kme says
+4.23:\nDisk bilgisi alnrken bir sorun oluŸtu, ”zet yanlŸ olabilir\n
+
+# Set 5: Yzey Taramas
+5.1:Taranyor, ltfen bekleyin . . .\n
+5.2:\nSekt”r %lu zerinde medya hatas, yeri de§iŸtiriliyor . . .\n
+5.3:Kmeyi taŸmak i‡in boŸ alan yok!\n
+
+# Set 7: €apraz Ba§l Dosyalar
+7.1:€apraz ba§l kmeleri ayrmak i‡in yetersiz disk alan\n
+7.2:%s ‡apraz ba§l (cross-linked)\n

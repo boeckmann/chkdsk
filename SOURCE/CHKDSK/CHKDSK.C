@@ -26,7 +26,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
+#include "kitten.h"
 #include "fte.h"
 
 #include "chkdrvr.h"
@@ -57,7 +57,10 @@ int main(int argc, char *argv[])
     char curdrive[3];
     char* curdir, *abspath;
 
-    /* Show copyright message */
+    /* Initialize Kitten NLS */
+    kittenopen("CHKDSK");
+
+    /* Show copyright message - usually not translated */
     printf("ChkDsk " VERSION "\n"
 	   "Copyright 2002, 2003, 2009 Imre Leber under the GNU GPL\n\n");
 
@@ -72,7 +75,7 @@ int main(int argc, char *argv[])
 
     if (argc > 4)
     {
-       printf("Invalid parameters (type %c? for help)\n", switchch);
+       printf(kittengets(1, 1, "Invalid parameters (type %c? for help)\n"), switchch);
        return 2;
     }
     
@@ -101,13 +104,13 @@ int main(int argc, char *argv[])
               }
               else
               {
-                 printf("Invalid parameters (type %c? for help)\n", switchch);
+                 printf(kittengets(1, 1, "Invalid parameters (type %c? for help)\n"), switchch);
                  return 2;  
               }
            }
            else if (PrevD)
            {
-              printf("Please use a path after /d\n");
+              printf(kittengets(1, 2, "Please use a path after /d\n"));
               return 2;
            }
            
@@ -146,18 +149,18 @@ int main(int argc, char *argv[])
                       Interactive = TRUE;
                       optioncounter++;
                       
-                      printf("%s reserved for future use!", argv[i]);
+                      printf(kittengets(1, 3, "%s reserved for future use!"), argv[i]);
                       return 2;
                       //break;
                       
                  default:
-                      printf("Unknown option %s used!", argv[i]);   
+                      printf(kittengets(1, 4, "Unknown option %s used!"), argv[i]);   
                       return 2;
            }
                       
            if (argv[i][2] != '\0')
            {
-              printf("Invalid parameters (type %c? for help)\n", switchch);
+              printf(kittengets(1, 1, "Invalid parameters (type %c? for help)\n"), switchch);
               return 2;                
            }  
        }
@@ -165,7 +168,7 @@ int main(int argc, char *argv[])
        /* Check semantics */     
        if (optioncounter > 1)
        {
-          printf("Some of the options can not be used together!\n");
+          printf(kittengets(1, 5, "Some of the options can not be used together!\n"));
           return 2;
        }
        
@@ -173,7 +176,7 @@ int main(int argc, char *argv[])
        {
           if (!fixerrors)
           {
-             printf("Some of the options can not be used together!\n");
+             printf(kittengets(1, 5, "Some of the options can not be used together!\n"));
              return 2;          
           }
        }
@@ -201,7 +204,7 @@ int main(int argc, char *argv[])
 
        if (!InitReadWriteSectors(curdrive, &handle))
        {
-          printf("Cannot access %s\n", curdrive);
+          printf(kittengets(1, 6, "Cannot access %s\n"), curdrive);
           return 2;
        }
     }
@@ -209,7 +212,7 @@ int main(int argc, char *argv[])
     {
        if (!InitReadWriteSectors(argv[1], &handle))
        {
-          printf("Cannot access %s\n", argv[1]);
+          printf(kittengets(1, 6, "Cannot access %s\n"), argv[1]);
           return 2;
        }
 
@@ -226,7 +229,7 @@ int main(int argc, char *argv[])
     /* FAT32 not currently supported */
     if (GetFatLabelSize(handle) == FAT32)
     {
-       printf("FAT32 not currently supported\n");
+       printf(kittengets(2, 1, "FAT32 not currently supported\n"));
        return 2;
     }
     
@@ -243,7 +246,7 @@ int main(int argc, char *argv[])
 	{
            /* No explicit drive was entered and we could not get the current working 
              directory => error */     
-	   printf("Cannot get current working dir\n");
+	   printf(kittengets(1, 7, "Cannot get current working dir\n"));
 
 	   free(abspath);
 	   free(curdir);
@@ -260,7 +263,7 @@ int main(int argc, char *argv[])
 		 if (imagefile ||
                     (toupper(argv[argc-1][0]) != toupper(curdrive[0])))
 		 {
-		    printf("Invalid drive specification\n");
+		    printf(kittengets(1, 8, "Invalid drive specification\n"));
 		    canproceed = FALSE;
 		 }
 		 else
@@ -279,7 +282,7 @@ int main(int argc, char *argv[])
               canproceed = MakeAbsolutePath(curdir, argv[argc-1], abspath);
 	      if (!canproceed)
 	      {
-		 printf("Incorrect relative path specification\n");
+		 printf(kittengets(1, 9, "Incorrect relative path specification\n"));
               }
            }
 
@@ -291,7 +294,7 @@ int main(int argc, char *argv[])
               free(curdir);
               if (!PrintFileDefragFactors(handle, abspath)) /* Print out the files */
               {
-                 printf("Problem printing out defragmentation factors.\n");
+                 printf(kittengets(2, 2, "Problem printing out defragmentation factors.\n"));
 	      }
               free(abspath);
            }
@@ -309,7 +312,7 @@ int main(int argc, char *argv[])
     /* Check the BOOT */
    if (!DescriptorCheck(handle))
    {
-       printf("Suspicious descriptor in boot\n");
+       printf(kittengets(2, 3, "Suspicious descriptor in boot\n"));
 	   
   //     DestroyFastTreeMap();
   //     CloseReadWriteSectors(&handle);
@@ -324,20 +327,20 @@ int main(int argc, char *argv[])
        thesame = MultipleBootCheck(handle);
        if (thesame == FALSE)
        {
-          printf("BOOTs are different\n");
+          printf(kittengets(2, 4, "BOOTs are different\n"));
        }
        if (thesame == FAIL)
        {
-          printf("Problem reading BOOT(s)\n");            
+          printf(kittengets(2, 5, "Problem reading BOOT(s)\n"));            
        }
     }
     else if (thesame == FALSE)
     {
-       printf("FATs are different\n");
+       printf(kittengets(2, 6, "FATs are different\n"));
     }
     else if (thesame == FAIL)
     {
-       printf("Problem reading FAT(s)\n");
+       printf(kittengets(2, 7, "Problem reading FAT(s)\n"));
     }
     
     /* Create the fast tree map */
@@ -353,7 +356,7 @@ int main(int argc, char *argv[])
        {
           if (!ScanSurface(handle))
           {        
-             printf("\nProblem scanning surface\n");
+             printf(kittengets(2, 8, "\nProblem scanning surface\n"));
              return 1;
           }
           printf("\n");
@@ -368,7 +371,7 @@ int main(int argc, char *argv[])
                    retval = 0;
                    break;
       	      case FAIL:
-	           printf("Error accessing the volume\n");
+	           printf(kittengets(2, 9, "Error accessing the volume\n"));
                    DestroyFastTreeMap();
                    CloseReadWriteSectors(&handle);
 		   return 2;
@@ -382,19 +385,19 @@ int main(int argc, char *argv[])
                    retval = 0;
                    break;
               case FALSE:
- 		   printf("\nErrors were found. You did not use the /F switch. "
-		          "Errors are not corrected\n\n");
+ 		   printf(kittengets(2, 10, "\nErrors were found. You did not use the /F switch. "
+		          "Errors are not corrected\n\n"));
 	           retval = 1;
                    break;
 	      case FAIL:
-	           printf("Error accessing the volume\n");
+	           printf(kittengets(2, 9, "Error accessing the volume\n"));
                    DestroyFastTreeMap();
                    CloseReadWriteSectors(&handle);
                    return 2;
           }
        }
 
-       printf("Elapsed time: %lds\n", time(NULL)-t);
+       printf(kittengets(3, 2, "Elapsed time: %lds\n"), time(NULL)-t);
     }
     
     /* Print out the volume summary. */
@@ -413,7 +416,7 @@ int main(int argc, char *argv[])
 
 static void Usage(char switchch)
 {
-    printf("Checks a volume and returns a status report\n"
+    printf(kittengets(3, 1, "Checks a volume and returns a status report\n"
            "Usage:\n"
            "\tChkdsk [<volume>] [%cf] [%cd <files>] [%cr] [%cs] [%cv]\n"
            "\n"
@@ -423,7 +426,7 @@ static void Usage(char switchch)
            "%cs: only show drive summary.\n"
            "%cv: show file name as it is being checked.\n"
            "\n"
-           "Note: if volume is ommited, the current drive is assumed.\n",
+           "Note: if volume is ommited, the current drive is assumed.\n"),
            switchch,
            switchch,
            switchch,

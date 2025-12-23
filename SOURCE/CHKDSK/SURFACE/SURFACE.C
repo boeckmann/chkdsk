@@ -24,6 +24,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "..\kitten.h"
 #include "fte.h"
 
 static BOOL RewriteCluster(RDWRHandle handle, CLUSTER cluster);

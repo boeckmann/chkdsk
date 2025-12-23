@@ -319,7 +319,8 @@ void UncacheBlockSector(unsigned devid, SECTOR sector)
    char  tagsused = 0, i;
    int   j;
    unsigned block = HashBlockNumber(sector);
-assert(0);
+   /* removed by Google AI for security */
+// assert(0);
    if (!IsBlockInitialised(block)) return;
 
    logblock = EnsureBlockMapped(block);

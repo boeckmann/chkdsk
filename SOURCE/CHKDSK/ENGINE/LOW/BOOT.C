@@ -93,10 +93,21 @@ static void UpdateHandleStruct(RDWRHandle handle,
 ** memory and updates the handle structure accordingly.
 *************************************************************/
 
+
+/* This is the bugfix by Fritz and Google AI */
+/* Should fix the bug that "Assertation failed: boot->BytesPerSector */
+/* file boot.c, line 541. */
+
 BOOL ReadBootSector(RDWRHandle handle, struct BootSectorStruct* buffer)
 {
     if (ReadSectors(handle, 1, 0, buffer) != -1)
     {
+       /* FIX: Absturz verhindern, wenn Laufwerk Nullen liefert */
+       if (buffer->BytesPerSector == 0) 
+       {
+           return FALSE; /* Wird als Lesefehler behandelt, kein Crash! */
+       }
+
        /* Update the info in the handle structure */
        UpdateHandleStruct(handle, buffer);          
        return TRUE;
@@ -104,6 +115,31 @@ BOOL ReadBootSector(RDWRHandle handle, struct BootSectorStruct* buffer)
     else
        RETURN_FTEERR(FALSE);	    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* This was the old version that got an error at file boot.c line541
+BOOL ReadBootSector(RDWRHandle handle, struct BootSectorStruct* buffer)
+{
+    if (ReadSectors(handle, 1, 0, buffer) != -1)
+    {
+        Update the info in the handle structure 
+       UpdateHandleStruct(handle, buffer);          
+       return TRUE;
+    }
+    else
+       RETURN_FTEERR(FALSE);	    
+}
+*/
 
 /************************************************************
 **                      WriteBootSector

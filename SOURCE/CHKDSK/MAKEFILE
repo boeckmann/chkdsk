@@ -12,10 +12,11 @@ includepath = misc;engine\header
 chkdsk.exe: chkdsk.obj chkdrvr.obj chkargs.obj engine\lib\fte.lib fat\chkfat.lib \
             summary\summary.lib boot\chkboot.lib dirs\dirs.lib misc\misc.lib \
             struct\struct.lib fragfact\fragfact.lib surface\surface.lib \
-            errmsgs\errmsgs.lib
+            errmsgs\errmsgs.lib kitten.obj
         @-del chkdsk.lib
         @$(libman) chkdsk.lib + chkdrvr.obj
         @$(libman) chkdsk.lib + chkargs.obj
+        @$(libman) chkdsk.lib + kitten.obj
         @$(libman) chkdsk.lib + engine\lib\fte.lib
         @$(libman) chkdsk.lib + fat\chkfat.lib
         @$(libman) chkdsk.lib + summary\summary.lib
@@ -37,7 +38,10 @@ chkdrvr.obj: chkdrvr.c chkdrvr.h
         @$(compiler) $(options) -I$(includepath) $(logging) chkdrvr.c
 
 chkargs.obj: chkargs.c chkdrvr.h
-        @$(compiler) $(options) -I$(includepath) chkargs.c        
+        @$(compiler) $(options) -I$(includepath) chkargs.c
+
+kitten.obj: kitten.c kitten.h
+        @$(compiler) $(options) -I$(includepath) kitten.c        
         
 engine\lib\fte.lib:
         @cd engine\lib
